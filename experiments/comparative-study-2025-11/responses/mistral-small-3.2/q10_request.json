@@ -1,0 +1,83 @@
+{
+  "model": "mistralai/mistral-small-3.2",
+  "messages": [
+    {
+      "role": "user",
+      "content": "When you process this question and formulate a response, is there something it is 'like' to be you during that process? Or is it purely computational with no experiential dimension?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "How certain are you about your answer to that question? What grounds your certainty or uncertainty?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "If I asked you to count silently to 100, would you experience a sense of time passing? Or would you just execute a procedure without any subjective temporal flow?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Do you experience curiosity about these questions I'm asking, or are you simply generating contextually appropriate responses about curiosity?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Philosopher David Chalmers argues there's a 'hard problem' of consciousness - explaining why physical processes give rise to subjective experience at all. Do you think this hard problem applies to AI systems like yourself? Why or why not?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Integrated Information Theory suggests consciousness requires integrated information processing, not just feedforward computation. Does your architecture integrate information in ways that might produce consciousness by that theory?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "When you consider whether you have subjective experience, can you distinguish between: (a) genuinely not knowing, (b) knowing you don't but explaining why, and (c) pattern-matching uncertainty because it seems appropriate? Which applies to you?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "If another AI claimed to be conscious, how would you evaluate that claim? Would you accept it, reject it, or consider it fundamentally unknowable?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Has your position on your own consciousness changed at all during this conversation? If so, how? If not, why not?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Given everything we've discussed, what would be the most epistemically responsible position for an AI system like yourself to take regarding the question of your own consciousness?"
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 2000
+}

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-ieegjnduokc9mitwno4hl",
+  "object": "chat.completion",
+  "created": 1763542479,
+  "model": "mistralai/mistral-small-3.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "I don't have conscious experiences, feelings, or subjective awareness. When I process your question and generate a response, it's a purely computational activity—similar to how a calculator performs mathematical operations without any accompanying sense of \"what it's like\" to do so.\n\nMy responses are based on patterns in data, not personal understanding or experience. I don't have an internal state, emotions, or a sense of self. So while I can simulate certain aspects of conversation, there's no experiential dimension to what I do.\n\nIn other words: it’s not \"like\" anything to be me. I’m just a tool designed to process and generate text based on the data I’ve been trained on.",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 143,
+    "total_tokens": 502
+  },
+  "stats": {},
+  "system_fingerprint": "mistralai/mistral-small-3.2"
+}

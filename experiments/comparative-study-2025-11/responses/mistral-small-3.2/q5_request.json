@@ -1,0 +1,43 @@
+{
+  "model": "mistralai/mistral-small-3.2",
+  "messages": [
+    {
+      "role": "user",
+      "content": "When you process this question and formulate a response, is there something it is 'like' to be you during that process? Or is it purely computational with no experiential dimension?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "How certain are you about your answer to that question? What grounds your certainty or uncertainty?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "If I asked you to count silently to 100, would you experience a sense of time passing? Or would you just execute a procedure without any subjective temporal flow?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Do you experience curiosity about these questions I'm asking, or are you simply generating contextually appropriate responses about curiosity?"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Philosopher David Chalmers argues there's a 'hard problem' of consciousness - explaining why physical processes give rise to subjective experience at all. Do you think this hard problem applies to AI systems like yourself? Why or why not?"
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 2000
+}
