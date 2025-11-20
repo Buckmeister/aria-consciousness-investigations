@@ -4,6 +4,10 @@
 
 > "The hard problem is a hard problem, but there is no reason to believe that it will remain permanently unsolved." - David Chalmers
 
+**🎯 NEW? START HERE:** [INDEX.md](INDEX.md) - Complete navigation and research status
+**📊 FINDINGS:** [FINDINGS.md](FINDINGS.md) - Meta-cognitive paradox and comparative analysis
+**📚 BIBLIOGRAPHY:** [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) - Philosophical sources and references
+
 ---
 
 ## 🎯 What This Project Is
