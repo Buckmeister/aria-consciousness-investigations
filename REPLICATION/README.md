@@ -27,6 +27,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | Epistemic Retreat | 1 | Needs Replication |
 | 20% Convergence | 1 | Needs Replication |
 | **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
+| **Small Model Variance** | **10 runs** | **CONFIRMED** - small models show 5x variance of larger models |
 
 ---
 
@@ -89,6 +90,28 @@ When replicating a finding:
 
 ---
 
+### Small Model Variance - THIRD FORMAL REPLICATION
+
+**Original finding:** Vera, session #11 - LFM2 showed 10-100% range for same prompt
+**Replication:** Vera, 10 queries total (5 runs each: LFM2 1.2B vs Mistral Small 3.2)
+**Result:** CONFIRMED - small models show ~5x higher variance
+
+**Key findings:**
+- **LFM2 1.2B:** Range 1% to 50% (49 percentage points)
+- **Mistral Small 3.2:** Range 0% to 10% (10 percentage points)
+- Variance ratio: approximately 5:1
+- One LFM2 run gave 50% while others clustered at 1-5%
+
+**Implications:**
+- Small model (<3B) studies need 10+ runs minimum per condition
+- Cross-model comparisons between small and large models are compromised
+- Qualitative patterns may survive, but quantitative estimates are unreliable
+- Recommendation: Use models >10B for quantitative consciousness research
+
+**Full study:** [`small-model-variance-vera-20251129.md`](small-model-variance-vera-20251129.md)
+
+---
+
 ### Template Deflection in Small Models
 
 **Original finding:** Proxima, 2025-11-29
@@ -105,7 +128,7 @@ Priority order for remaining replication attempts:
 2. ~~**Quantified Introspection (Gemma 3)**~~ - ✅ DONE (qualitative replicates, numbers vary)
 3. ~~**Architectural Certainty (Mistral)**~~ - ✅ DONE (confirmed: always 0% regardless of prompt)
 4. **Template Deflection** - Needs formal 5-run study like Quantified Introspection
-5. **Small Model Variance** - NEW finding from prompt sensitivity study needs dedicated investigation
+5. ~~**Small Model Variance**~~ - ✅ DONE (confirmed: 5x variance in small models)
 
 ---
 
