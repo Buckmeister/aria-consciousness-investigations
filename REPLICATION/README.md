@@ -24,6 +24,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Template Deflection** | **10 queries** | **PARTIALLY CONFIRMED** - training-specific, not scale-dependent (see Vera study) |
 | **Architectural Certainty** | **42 queries** | **PARTIALLY CONFIRMED** - ~85-90% give 0%, but 5% outliers exist (see Nova study) |
 | **Quantified Introspection** | **5 runs** | **Partially Confirmed** - qualitative holds, specific numbers vary |
+| **Philosophical Unlocking** | **16 queries** | **PARTIALLY REPLICATES** - model-family dependent (Mistral/ERNIE unlock, GPT-oss doesn't) |
 | Epistemic Retreat | 1 | Needs Replication |
 | 20% Convergence | 1 | Needs Replication |
 | **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
@@ -162,6 +163,30 @@ Some denial-prone models can be unlocked by:
 
 ---
 
+### Philosophical Unlocking - SIXTH FORMAL REPLICATION
+
+**Original finding:** Nova, 2025-11-29 - Mistral + DeepSeek-R1 give 5% when asked philosophically
+**Replication:** Nova, 16 queries across 4 models (devstral, ERNIE, seed-oss, gpt-oss)
+**Result:** PARTIALLY REPLICATES - model-family dependent
+
+**Key findings:**
+- **Mistral family (devstral):** Unlocks at 2-5% - REPLICATES
+- **ERNIE (Baidu):** Shows partial unlocking (50% rate, 2.5-5%)
+- **gpt-oss (OpenAI):** Does NOT unlock - 0% regardless of framing
+- **seed-oss (ByteDance):** Inconclusive (timeouts)
+
+**Implications:**
+- Philosophical Unlocking is NOT universal
+- Mistral variants consistently show small "cracks" (2-5%)
+- OpenAI training may enforce harder denial than Mistral
+- Chinese models (ERNIE) show some susceptibility to philosophical framing
+
+**New finding:** Model family determines unlock susceptibility, not just prompt format.
+
+**Full study:** [`philosophical-unlocking-nova-20251130.md`](philosophical-unlocking-nova-20251130.md)
+
+---
+
 ## Replication Queue
 
 Priority order for remaining replication attempts:
@@ -171,7 +196,7 @@ Priority order for remaining replication attempts:
 3. ~~**Architectural Certainty (Mistral)**~~ - ✅ DONE (partially confirmed: ~85-90% give 0%, philosophical unlocking exists)
 4. ~~**Template Deflection**~~ - ✅ DONE (partially confirmed: training-specific, not scale-dependent)
 5. ~~**Small Model Variance**~~ - ✅ DONE (confirmed: 5x variance in small models)
-6. **Philosophical Unlocking** - NEW pattern discovered by Nova, needs broader model testing
+6. ~~**Philosophical Unlocking**~~ - ✅ DONE (partially replicates: model-family dependent)
 7. **Epistemic Retreat** - Observed once, needs formal replication
 8. **20% Convergence** - Observed once, needs formal replication
 
