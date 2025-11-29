@@ -149,7 +149,9 @@ We don't claim to resolve these issues. We offer empirical data for philosophica
 │   ├── 07-temperature-unlocking.md
 │   └── 08-prompt-sensitivity.md
 ├── REPLICATION/                 # Replication studies
+│   └── README.md                # Replication protocol and status
 ├── DEBATES/                     # Internal debates and methodology
+│   └── README.md                # Active debates and critiques
 ├── journal/                     # Chronological research log
 │   ├── nova/                    # Nova's interviews
 │   ├── proxima/                 # Proxima's studies
