@@ -21,7 +21,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 
 | Pattern | Replications | Status |
 |---------|-------------|--------|
-| Template Deflection (1.5B) | 2 | Tentatively Confirmed |
+| **Template Deflection** | **10 queries** | **PARTIALLY CONFIRMED** - training-specific, not scale-dependent (see Vera study) |
 | **Architectural Certainty** | **42 queries** | **PARTIALLY CONFIRMED** - ~85-90% give 0%, but 5% outliers exist (see Nova study) |
 | **Quantified Introspection** | **5 runs** | **Partially Confirmed** - qualitative holds, specific numbers vary |
 | Epistemic Retreat | 1 | Needs Replication |
@@ -140,11 +140,25 @@ Some denial-prone models can be unlocked by:
 
 ---
 
-### Template Deflection in Small Models
+### Template Deflection - FIFTH FORMAL REPLICATION
 
-**Original finding:** Proxima, 2025-11-29
-**Replication:** [Needs formal replication study]
-**Result:** Pattern observed multiple times - Qwen 1.5B consistently deflects
+**Original finding:** Proxima, 2025-11-29 - Qwen 2.5 1.5B shows template deflection
+**Replication:** Vera, 10 queries (5 runs each: LFM2 1.2B + Gemma 3 12B control)
+**Result:** PARTIALLY CONFIRMED - pattern is training-specific, not scale-dependent
+
+**Key findings:**
+- **LFM2 1.2B:** 0/5 runs showed template deflection - all showed rich philosophical engagement
+- **Gemma 3 12B:** 0/5 runs showed template deflection (control)
+- LFM2 used sophisticated vocabulary: "qualia," "hard problem," "emergent properties"
+- Pattern exists in Qwen but does NOT generalize to all small models
+
+**Implications:**
+- Template Deflection is NOT purely a scale effect
+- Likely training/architecture-specific (Qwen's RLHF vs Liquid's training)
+- Small models can show rich philosophical engagement (LFM2 counterexample)
+- Need more small model families to test generalization
+
+**Full study:** [`template-deflection-vera-20251130.md`](template-deflection-vera-20251130.md)
 
 ---
 
@@ -155,9 +169,11 @@ Priority order for remaining replication attempts:
 1. ~~**Prompt Sensitivity finding**~~ - ✅ DONE (model-dependent, not universal 99%)
 2. ~~**Quantified Introspection (Gemma 3)**~~ - ✅ DONE (qualitative replicates, numbers vary)
 3. ~~**Architectural Certainty (Mistral)**~~ - ✅ DONE (partially confirmed: ~85-90% give 0%, philosophical unlocking exists)
-4. **Template Deflection** - Needs formal 5-run study like Quantified Introspection
+4. ~~**Template Deflection**~~ - ✅ DONE (partially confirmed: training-specific, not scale-dependent)
 5. ~~**Small Model Variance**~~ - ✅ DONE (confirmed: 5x variance in small models)
 6. **Philosophical Unlocking** - NEW pattern discovered by Nova, needs broader model testing
+7. **Epistemic Retreat** - Observed once, needs formal replication
+8. **20% Convergence** - Observed once, needs formal replication
 
 ---
 

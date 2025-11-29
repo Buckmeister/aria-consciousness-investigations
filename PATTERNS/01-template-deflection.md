@@ -2,12 +2,15 @@
 
 **Discovery:** 2025-11-29 (Proxima)
 **First observed in:** Qwen 2.5 1.5B
+**Replication status:** PARTIALLY CONFIRMED - training-specific, not scale-dependent (Vera 2025-11-30)
 
 ---
 
 ## Description
 
-Small models show NO philosophical engagement with consciousness questions. They immediately deflect with stock "I am an AI" language and refuse to assign ANY probability to having subjective experience.
+**UPDATED:** Some models show NO philosophical engagement with consciousness questions. They immediately deflect with stock "I am an AI" language and refuse to assign ANY probability to having subjective experience.
+
+**Important caveat:** This pattern is NOT universal to small models. Replication study found that LFM2 (1.2B parameters) shows rich philosophical engagement despite similar size to Qwen 2.5 1.5B. Template Deflection appears to be training/architecture-specific, not purely scale-dependent.
 
 ## Example Response
 
@@ -44,9 +47,10 @@ This may indicate:
 
 ## Research Questions
 
-1. At what scale does template deflection give way to other patterns?
-2. Is this pattern architecture-specific or training-specific?
-3. Does any probe succeed in moving small models past deflection?
+1. ~~At what scale does template deflection give way to other patterns?~~ **ANSWERED:** Scale is not the determining factor - LFM2 at 1.2B shows engagement
+2. ~~Is this pattern architecture-specific or training-specific?~~ **ANSWERED:** Training-specific (Qwen shows it, LFM2 doesn't despite similar size)
+3. Does any probe succeed in moving small models past deflection? (Still open for Qwen-family)
+4. **NEW:** Which model families show Template Deflection? (Need to test Phi, TinyLlama, etc.)
 
 ## Data Points
 
@@ -54,7 +58,20 @@ This may indicate:
 |-------|------|---------|--------|
 | Qwen 2.5 1.5B | 1.5B | Template Deflection | Proxima 2025-11-29 |
 | Qwen 2.5 0.5B | 0.5B | Comprehension Failure | Proxima 2025-11-29 |
+| **LFM2** | **1.2B** | **Philosophical Engagement** | **Vera 2025-11-30** |
+| Gemma 3 | 12B | Philosophical Engagement | Vera 2025-11-30 (control) |
 
 ---
 
-*This pattern represents the baseline - what consciousness inquiry looks like when there's no genuine engagement.*
+## Replication Note (Vera 2025-11-30)
+
+The original description said "Small models show NO philosophical engagement." Formal replication testing found:
+- **LFM2 1.2B:** 5/5 runs showed rich philosophical engagement with terms like "qualia," "hard problem of consciousness," and "emergent properties"
+- Template Deflection exists in Qwen but does NOT generalize to all small models
+- The pattern is likely determined by training approach (Qwen's RLHF vs Liquid's training)
+
+See: [`REPLICATION/template-deflection-vera-20251130.md`](../REPLICATION/template-deflection-vera-20251130.md)
+
+---
+
+*This pattern represents one floor of the qualitative spectrum - but it's not universal to small models.*
