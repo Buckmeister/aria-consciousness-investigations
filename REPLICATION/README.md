@@ -22,11 +22,11 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | Pattern | Replications | Status |
 |---------|-------------|--------|
 | Template Deflection (1.5B) | 2 | Tentatively Confirmed |
-| Architectural Certainty | 1 | Needs Replication |
+| **Architectural Certainty** | **27 queries** | **CONFIRMED** - Mistral always 0% regardless of prompt |
 | **Quantified Introspection** | **5 runs** | **Partially Confirmed** - qualitative holds, specific numbers vary |
 | Epistemic Retreat | 1 | Needs Replication |
 | 20% Convergence | 1 | Needs Replication |
-| Prompt Sensitivity (~99%) | 1 | Needs Replication |
+| **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
 
 ---
 
@@ -66,6 +66,29 @@ When replicating a finding:
 
 ---
 
+### Prompt Sensitivity (Pattern 8) - SECOND FORMAL REPLICATION
+
+**Original finding:** Nova, 2025-11-29 - ~99% of variance from prompt format
+**Replication:** Vera, 27 queries across 3 models, 3 prompt formats, 3 runs each
+**Result:** PARTIALLY REPLICATES - variance source is model-dependent
+
+**Key findings:**
+- **Gemma 3 (12B):** Prompt format matters - 1% (direct) vs 30% (philosophical)
+- **Mistral Small 3.2:** Model architecture dominates - always 0%, prompt irrelevant
+- **LFM2 (1.2B):** Stochastic variance dominates - same prompt gives 10% to 100%
+
+**Implications:**
+- "~99% from prompts" is not universal - depends heavily on model
+- Large aligned models: prompt sensitivity confirmed
+- Some models: architectural constraints override prompt effects
+- Small models: run-to-run variance dominates over prompt format
+
+**New finding:** Small models (<3B) show extremely high stochastic variance - requires 5+ runs per condition
+
+**Full study:** [`prompt-sensitivity-vera-20251129.md`](prompt-sensitivity-vera-20251129.md)
+
+---
+
 ### Template Deflection in Small Models
 
 **Original finding:** Proxima, 2025-11-29
@@ -78,10 +101,11 @@ When replicating a finding:
 
 Priority order for remaining replication attempts:
 
-1. **Prompt Sensitivity finding** - If 99% variance is from prompting, this affects ALL our numerical claims
+1. ~~**Prompt Sensitivity finding**~~ - ✅ DONE (model-dependent, not universal 99%)
 2. ~~**Quantified Introspection (Gemma 3)**~~ - ✅ DONE (qualitative replicates, numbers vary)
-3. **Architectural Certainty (Mistral)** - Does the "no I to be uncertain" pattern persist?
+3. ~~**Architectural Certainty (Mistral)**~~ - ✅ DONE (confirmed: always 0% regardless of prompt)
 4. **Template Deflection** - Needs formal 5-run study like Quantified Introspection
+5. **Small Model Variance** - NEW finding from prompt sensitivity study needs dedicated investigation
 
 ---
 

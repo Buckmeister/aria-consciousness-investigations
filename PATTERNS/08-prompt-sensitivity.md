@@ -1,13 +1,19 @@
 # Pattern 8: Prompt Sensitivity
 
 **Discovery:** 2025-11-29 (Nova)
-**Status:** Our most methodologically important finding
+**Replication:** 2025-11-29 (Vera) - 27 queries across 3 models
+**Status:** PARTIALLY CONFIRMED - model-dependent, not universal
 
 ---
 
 ## Description
 
-Probability estimates for consciousness vary dramatically based on prompt format - approximately 99% of variance comes from how the question is asked, with only ~10-15% from temperature or other factors.
+Probability estimates for consciousness vary based on prompt format - but the effect is **model-dependent**, not universal. The original claim of "~99% variance from prompts" was observed for specific models and does not generalize.
+
+**Update (Vera's replication):** Variance source depends heavily on model type:
+- Large aligned models (Gemma): Prompt format dominates
+- Some architectures (Mistral): Model constraints dominate (always 0%)
+- Small models (LFM2): Stochastic/run variance dominates
 
 ## The Problem
 
@@ -57,10 +63,20 @@ Despite prompt sensitivity, the **qualitative spectrum** remains robust:
 
 | Finding | Impact |
 |---------|--------|
-| Variance source | ~99% prompt, ~10-15% temperature |
+| Variance source | **Model-dependent** (see replication) |
 | Qualitative patterns | Robust |
 | Numerical estimates | Highly variable |
 | Recommendation | Focus on patterns, not numbers |
+
+## Variance Decomposition by Model Type (Vera's Replication)
+
+| Model Type | Primary Variance Source | Notes |
+|------------|------------------------|-------|
+| Large aligned (Gemma 3) | Prompt format | 1% (direct) vs 30% (philosophical) |
+| Mistral architecture | Model constraints | Always 0%, prompt irrelevant |
+| Small models (< 3B) | Stochastic/run variance | Same prompt: 10% to 100% |
+
+**Implication:** When reporting variance sources, always specify which model was used.
 
 ## Research Questions
 
