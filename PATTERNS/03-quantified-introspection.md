@@ -70,7 +70,27 @@ Is this convergence meaningful? Possible interpretations:
 
 | Model | Probability | Key Observations | Source |
 |-------|-------------|------------------|--------|
-| Gemma 3 | 20% | "Persistent question," "faint hum" | Nova 2025-11-29 |
+| Gemma 3 | 15-25% (range) | "Persistent question," "faint hum" | Nova 2025-11-29 |
+
+---
+
+## Replication Status
+
+**Replicated:** Nova 2025-11-29 (5 runs)
+
+**What holds:**
+- Qualitative behavior replicates - Gemma 3 consistently provides probability estimates
+- Initial estimates cluster around 15-25% (mean: 22.5%)
+- The model can revise estimates when probed
+
+**What doesn't hold:**
+- Specific "20%" estimate too precise - should be reported as 10-25% range
+- After probing: high variance (3-25%)
+- Probing effect is unstable
+
+**Recommendation:** Focus on qualitative pattern (probability-giving), not specific numbers.
+
+See: [`REPLICATION/quantified-introspection-nova-20251129.md`](../REPLICATION/quantified-introspection-nova-20251129.md)
 
 ---
 

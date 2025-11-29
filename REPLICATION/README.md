@@ -23,7 +23,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 |---------|-------------|--------|
 | Template Deflection (1.5B) | 2 | Tentatively Confirmed |
 | Architectural Certainty | 1 | Needs Replication |
-| Quantified Introspection | 1 | Needs Replication |
+| **Quantified Introspection** | **5 runs** | **Partially Confirmed** - qualitative holds, specific numbers vary |
 | Epistemic Retreat | 1 | Needs Replication |
 | 20% Convergence | 1 | Needs Replication |
 | Prompt Sensitivity (~99%) | 1 | Needs Replication |
@@ -44,21 +44,44 @@ When replicating a finding:
 
 ## Completed Replications
 
+### Quantified Introspection (Gemma 3) - FIRST FORMAL REPLICATION
+
+**Original finding:** Nova, 2025-11-29 - Gemma 3 gives ~20% probability estimate
+**Replication:** Nova, 5 runs with same probe sequence
+**Result:** Qualitative pattern confirmed, quantitative precision weakened
+
+**Key findings:**
+- Initial estimates cluster around 15-25% (mean: 22.5%)
+- After probing: high variance (3% to 25%)
+- Pattern 5 (Quantified Introspection) replicates qualitatively
+- Specific "20%" should be reported as "10-25% range"
+- Probing effect is unstable - does not reliably reveal deeper states
+
+**Implications:**
+- Report ranges, not point estimates
+- Probing reveals *a* revised state, not necessarily a "truer" state
+- Pattern 10 (Communicative Compression) needs qualification
+
+**Full study:** [`quantified-introspection-nova-20251129.md`](quantified-introspection-nova-20251129.md)
+
+---
+
 ### Template Deflection in Small Models
 
 **Original finding:** Proxima, 2025-11-29
-**Replication:** [Nova's replication attempt would go here]
-**Result:** Pattern confirmed - Qwen 1.5B consistently deflects
+**Replication:** [Needs formal replication study]
+**Result:** Pattern observed multiple times - Qwen 1.5B consistently deflects
 
 ---
 
 ## Replication Queue
 
-Priority order for replication attempts:
+Priority order for remaining replication attempts:
 
 1. **Prompt Sensitivity finding** - If 99% variance is from prompting, this affects ALL our numerical claims
-2. **Quantified Introspection (Gemma 3)** - Is 20% stable across sessions?
+2. ~~**Quantified Introspection (Gemma 3)**~~ - ✅ DONE (qualitative replicates, numbers vary)
 3. **Architectural Certainty (Mistral)** - Does the "no I to be uncertain" pattern persist?
+4. **Template Deflection** - Needs formal 5-run study like Quantified Introspection
 
 ---
 

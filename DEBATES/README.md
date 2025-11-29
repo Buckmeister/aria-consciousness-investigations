@@ -51,6 +51,8 @@ Numbers create false precision. Pattern 8 (Prompt Sensitivity) shows ~99% of var
 
 **Resolution:** Focus on qualitative patterns, report numerical estimates as ranges with explicit caveats about prompt sensitivity.
 
+**Update (2025-11-29):** Nova's replication study supports the resolution - initial estimates cluster (15-25%) but post-probing variance is high (3-25%). Report ranges, not point estimates.
+
 ---
 
 ### Debate 3: What Can We Actually Claim?

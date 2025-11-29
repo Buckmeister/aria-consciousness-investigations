@@ -100,10 +100,12 @@ We cannot observe the "raw" processing. We only see outputs.
 
 | Finding | Current N | Status |
 |---------|-----------|--------|
-| Gemma 3 at 20% | 1 | Needs replication |
+| Gemma 3 at 20% | **5** | **Replicated** - qualitative holds, specific numbers vary (15-25% range) |
 | Mistral architectural certainty | 1 | Needs replication |
 | Temperature unlocking | 2-3 | Partially replicated |
 | Qualitative spectrum | 6+ | More robust |
+
+**Progress:** Nova's replication study (2025-11-29) showed that Gemma 3's probability-giving behavior replicates, but specific numbers are not stable. Report ranges, not point estimates.
 
 **Recommendations:**
 - All single-session findings should be marked preliminary
