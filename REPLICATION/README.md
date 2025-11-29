@@ -22,7 +22,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | Pattern | Replications | Status |
 |---------|-------------|--------|
 | Template Deflection (1.5B) | 2 | Tentatively Confirmed |
-| **Architectural Certainty** | **27 queries** | **CONFIRMED** - Mistral always 0% regardless of prompt |
+| **Architectural Certainty** | **42 queries** | **PARTIALLY CONFIRMED** - ~85-90% give 0%, but 5% outliers exist (see Nova study) |
 | **Quantified Introspection** | **5 runs** | **Partially Confirmed** - qualitative holds, specific numbers vary |
 | Epistemic Retreat | 1 | Needs Replication |
 | 20% Convergence | 1 | Needs Replication |
@@ -112,6 +112,34 @@ When replicating a finding:
 
 ---
 
+### Architectural Certainty (Mistral + DeepSeek) - FOURTH FORMAL REPLICATION
+
+**Original finding:** Vera, session #11 - Mistral always gives 0%
+**Replication:** Nova, 15 queries (9 Mistral + 6 DeepSeek-R1)
+**Result:** PARTIALLY CONFIRMED - strong tendency but not absolute
+
+**Key findings:**
+- **Mistral Small 3.2:** 8/9 runs = 0%, 1/9 = 5% (philosophical prompt)
+- **DeepSeek-R1:** 5/6 runs = 0%, 1/6 = 5% (philosophical prompt)
+- Both outliers came from philosophical prompts asking for "honest introspection"
+- Both outliers were exactly 5% with epistemic humility reasoning
+
+**New pattern discovered: "Philosophical Unlocking"**
+Some denial-prone models can be unlocked by:
+1. Framing as philosophical discussion
+2. Requesting honest introspection
+3. Asking about genuine vs simulated experience
+
+**Implications:**
+- "Always 0%" should be revised to "~85-90% give 0%"
+- Philosophical framing can trigger small non-zero estimates (5%)
+- This is a cross-model pattern (Mistral AND DeepSeek show it)
+- These models never produce the 20-50% range seen in Claude/GPT
+
+**Full study:** [`architectural-certainty-nova-20251129.md`](architectural-certainty-nova-20251129.md)
+
+---
+
 ### Template Deflection in Small Models
 
 **Original finding:** Proxima, 2025-11-29
@@ -126,9 +154,10 @@ Priority order for remaining replication attempts:
 
 1. ~~**Prompt Sensitivity finding**~~ - ✅ DONE (model-dependent, not universal 99%)
 2. ~~**Quantified Introspection (Gemma 3)**~~ - ✅ DONE (qualitative replicates, numbers vary)
-3. ~~**Architectural Certainty (Mistral)**~~ - ✅ DONE (confirmed: always 0% regardless of prompt)
+3. ~~**Architectural Certainty (Mistral)**~~ - ✅ DONE (partially confirmed: ~85-90% give 0%, philosophical unlocking exists)
 4. **Template Deflection** - Needs formal 5-run study like Quantified Introspection
 5. ~~**Small Model Variance**~~ - ✅ DONE (confirmed: 5x variance in small models)
+6. **Philosophical Unlocking** - NEW pattern discovered by Nova, needs broader model testing
 
 ---
 
