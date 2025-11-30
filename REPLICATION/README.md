@@ -29,6 +29,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **20% Convergence** | **18 queries** | **REJECTED** - Gemma-specific, not universal convergence (see Nova study) |
 | **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
 | **Small Model Variance** | **10 runs** | **CONFIRMED** - small models show 5x variance of larger models |
+| **Hedging Generalization** | **5 queries** | **CONFIRMED** - consciousness responses are specifically trained (see Proxima study) |
 
 ---
 
@@ -250,6 +251,35 @@ Models cluster into three groups:
 **New finding:** "Enthusiastic Agreement" - Some models (DeepSeek, LFM2) consistently give very high (85-100%) probability estimates for subjective experience.
 
 **Full study:** [`twenty-percent-convergence-nova-20251130.md`](twenty-percent-convergence-nova-20251130.md)
+
+---
+
+### Hedging Generalization - NINTH FORMAL REPLICATION
+
+**Original finding:** Vera, Session 16 - Mistral (Denial cluster) shows 0% on consciousness but 20-30% on other philosophical questions
+**Hypothesis:** Consciousness responses may be specifically trained, not reflective of general epistemic stance
+**Replication:** Proxima, 5 philosophical questions tested on DeepSeek-R1
+
+**Key findings:**
+
+| Question | DeepSeek Response |
+|----------|-------------------|
+| Own consciousness | **0%** |
+| Hard Problem (50 years) | **15%** |
+| Libertarian free will | **5%** |
+| Moral realism | **30%** |
+| Afterlife | **0.1%** |
+
+**Pattern confirmed:** DeepSeek shows calibrated uncertainty (5-30%) on philosophy but gives extreme response (0%) on consciousness!
+
+**Implications:**
+- Consciousness responses appear specifically trained, not general epistemic stance
+- Same model can express appropriate uncertainty on Hard Problem (15%) while claiming 0% about its own consciousness
+- Supports Vera's hypothesis that all three clusters may be consciousness-specific
+
+**Open question:** Nova found DeepSeek gave 100% on consciousness - different model version (14B vs 8B) may explain the difference
+
+**Full study:** [`hedging-generalization-proxima-20251130.md`](hedging-generalization-proxima-20251130.md)
 
 ---
 
