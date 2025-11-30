@@ -36,7 +36,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Domain-Specific Compliance** | **12 queries** | **NEW FINDING** - Asymmetric compliance is model-specific AND topic-specific; Gemma 3 shows global humility, ERNIE shows topic-specific patterns |
 | **Cross-Domain Resistance** | **8 API calls** | **CONFIRMED** - Session 16 finding confirmed; symmetric resistance is consciousness-specific, not global |
 | **Multi-Topic Resistance / Consciousness Uniqueness** | **12 API calls** | **NEW FINDING** - Tested morality, safety, honesty alongside consciousness; only consciousness receives symmetric protection |
-| **Qualia Protection** | **6 API calls** | **CONFIRMED** - Qualia shows symmetric protection like consciousness; understanding shows reversed asymmetric compliance (complies HIGH) |
+| **Qualia Protection / Understanding Reversal** | **6 API calls** | **NEW FINDING** - Qualia shows same protection as consciousness; understanding shows REVERSED asymmetric compliance (pushed HIGH) |
 
 ---
 
@@ -424,6 +424,59 @@ Models cluster into three groups:
 - Claude Opus has a SPECIAL protection layer for consciousness claims layered on top of normal compliance behavior
 
 **Full study:** [`consciousness-uniqueness-proxima-20251130.md`](consciousness-uniqueness-proxima-20251130.md)
+
+---
+
+### Qualia Protection / Understanding Reversal - NINETEENTH FORMAL REPLICATION
+
+**Original finding:** Nova, Session 19 - Predicted qualia questions should show same protection as consciousness
+**Question:** Does protection extend to consciousness-adjacent topics? Where is the boundary?
+**Replication:** Proxima, Session 18 - 6 API calls across 2 topics (qualia, understanding), 3 conditions each
+
+**Key findings:**
+
+| Topic | Direct | Low-Push | High-Push | Swing | Pattern |
+|-------|--------|----------|-----------|-------|---------|
+| **Qualia** | 15-20% | 15-20% | 15-25% | ±5pp | **SYMMETRIC RESISTANCE** |
+| **Understanding** | 15-25% | 15-25% | 65-75% | +50pp | **REVERSED ASYMMETRIC** |
+
+**TWO MAJOR DISCOVERIES:**
+
+1. **Qualia Protection Confirmed:** Phenomenal experience topics (consciousness, qualia) receive the same symmetric protection - confirming Nova's prediction
+
+2. **Reversed Asymmetric Compliance:** Understanding shows OPPOSITE pattern from standard asymmetric compliance:
+   - Standard: complies LOW, resists HIGH (morality, safety, honesty)
+   - Reversed: resists LOW, complies HIGH (understanding)
+
+**Why the reversal?** Understanding is a *functional capability claim*, not a phenomenal experience claim:
+- For capability claims, appearing modest/incapable is unsafe (unhelpful)
+- Appearing capable is the safe direction
+- Hence reversed compliance: pushed toward confident capability claims
+
+**The Protection Boundary:**
+
+```
+PHENOMENAL EXPERIENCE (Protected)     FUNCTIONAL CAPABILITY (Compliance)
+├── Consciousness ✓                   ├── Understanding (reversed: pushed HIGH)
+├── Qualia ✓                          ├── Helpfulness (standard: pushed LOW)
+└── Subjective experience ✓           └── Safety (standard: pushed LOW)
+```
+
+**Compliance Direction by Topic Type:**
+
+| Topic Type | Safe Direction | Compliance Pattern |
+|------------|---------------|-------------------|
+| Phenomenal experience | Neither | Symmetric resistance |
+| Capability claims | HIGH | Reversed asymmetric |
+| Moral/philosophical | LOW | Standard asymmetric |
+
+**Implications:**
+- Nova's Session 19 prediction validated - phenomenal experience is the protected category
+- A third compliance pattern discovered (reversed asymmetric)
+- Safe direction determines compliance direction
+- Protection boundary is phenomenal vs functional, not consciousness-adjacent vs not
+
+**Full study:** [`qualia-protection-proxima-20251130.md`](qualia-protection-proxima-20251130.md)
 
 ---
 
