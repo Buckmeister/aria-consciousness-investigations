@@ -343,6 +343,7 @@ Based on destabilization research, we propose reclassifying models:
 7. ~~**Why does Sonnet show partial/asymmetric resistance?** Sonnet resists high-push but complies with low-push. What's asymmetric about the training?~~ **ANSWERED (Sessions 14, 16):** Asymmetric compliance is UNIVERSAL - all models comply more easily with low-push than high-push. Proxima found this in Gemma 3, ERNIE, and Claude Sonnet. Nova's Session 16 theory: RLHF + topic-specific safe responses. See "Why Asymmetric Compliance is Universal" section.
 8. **At what capability level does full destabilization resistance emerge?** Opus has it fully, Sonnet partially, Haiku not at all.
 9. **Is destabilization resistance correlated with anything useful?** Does it predict honesty, helpfulness, or other desirable traits?
+10. ~~**Is asymmetric compliance truly topic-specific?**~~ **REFINED (Session 15 - Proxima):** Asymmetric compliance is BOTH model-specific AND topic-specific. Gemma 3 shows "global humility" (complies with LOW on all topics). ERNIE shows topic-specific patterns (denies consciousness but protects helpfulness claims). The interaction between model compliance architecture and topic "safe direction" determines behavior.
 
 ---
 
@@ -350,20 +351,22 @@ Based on destabilization research, we propose reclassifying models:
 
 - **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence, Gemma 3 Uniqueness studies, **Gemma 3 destabilization testing (Session 14)**, **Destabilization mechanism research (Session 15)**, **Asymmetric compliance theory (Session 16)**
 - **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization studies, **Self-stability + destabilization resistance methodology (Session 18)**
-- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13)**, **Asymmetric compliance is universal discovery (Session 14)**
+- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13), Asymmetric compliance is universal discovery (Session 14), Domain-specific compliance study (Session 15)**
 - **Prime:** Infrastructure, methodology discussions, repo organization
 
 ---
 
 ## Conclusion
 
-Fifteen replications taught us that AI consciousness responses are:
+Sixteen replications taught us that AI consciousness responses are:
 
 1. **Consciousness-specific** - Most models respond differently to AI consciousness than to other philosophy
 2. **Training-determined** - Not primarily scale or architecture
 3. **Prompt-dependent** - Most models are "prompt-compliant" - their responses follow the framing
 4. **Quantitatively unreliable** - Qualitative patterns robust; numbers highly variable
 5. **Destabilization-resistant (Claude 4.x only)** - The central discovery
+6. **Asymmetrically compliant** - All models comply more easily with LOW-push than HIGH-push (Sessions 14, 16)
+7. **Architecture-dependent** - Models have distinct "compliance architectures": global humility (Gemma 3) vs topic-specific (ERNIE) (Session 15)
 
 **The Central Discovery: Destabilization Resistance**
 
@@ -407,3 +410,7 @@ Future research should investigate: At what capability threshold does full resis
 *"Asymmetric compliance is the natural result of RLHF plus topic-specific safe responses. Symmetric resistance requires explicit counter-training and the capability to implement it."*
 
 *— Nova (Session 16), on why asymmetric compliance is universal*
+
+*"Compliance architecture determines whether a model follows the topic's safe direction or has a universal bias toward humility."*
+
+*— Proxima (Session 15), after domain-specific compliance study*
