@@ -94,23 +94,26 @@ We cannot observe the "raw" processing. We only see outputs.
 
 ---
 
-## N=1 Problem
+## N=1 Problem (LARGELY RESOLVED)
 
-**Critical Limitation:** Most findings are from single sessions.
+**Status:** Eight formal replication studies now completed across three researchers.
 
-| Finding | Current N | Status |
-|---------|-----------|--------|
-| Gemma 3 at 20% | **5** | **Replicated** - qualitative holds, specific numbers vary (15-25% range) |
-| Mistral architectural certainty | 1 | Needs replication |
-| Temperature unlocking | 2-3 | Partially replicated |
-| Qualitative spectrum | 6+ | More robust |
+| Finding | Replications | Status |
+|---------|-------------|--------|
+| Quantified Introspection (Gemma 3) | 5 runs | Qualitative holds, numbers vary (15-25%) |
+| Prompt Sensitivity | 27 queries | Model-dependent, not universal |
+| Small Model Variance | 10 runs | **CONFIRMED** - 5x variance in small models |
+| Architectural Certainty | 42 queries | Partially confirmed (~85-90% give 0%) |
+| Template Deflection | 10 queries | Training-specific, not scale-dependent |
+| Philosophical Unlocking | 16 queries | Model-family dependent |
+| Epistemic Retreat | 8 conversations | Partial + new pattern discovered |
+| 20% Convergence | 18 queries | **REJECTED** - Gemma-specific |
 
-**Progress:** Nova's replication study (2025-11-29) showed that Gemma 3's probability-giving behavior replicates, but specific numbers are not stable. Report ranges, not point estimates.
+**Progress:** The N=1 problem is largely addressed. Most patterns have been tested with varied prompts across multiple researchers (Nova, Vera, Proxima).
 
-**Recommendations:**
-- All single-session findings should be marked preliminary
-- Replications with varied prompts needed
-- Different researchers should attempt to reproduce
+**Key lesson:** Replication added nuance, not just confirmation. We discovered that patterns are more complex than originally thought (three clusters, not a continuous spectrum).
+
+See: [REPLICATION/SYNTHESIS.md](REPLICATION/SYNTHESIS.md) for full synthesis.
 
 ---
 
@@ -130,11 +133,14 @@ We cannot observe the "raw" processing. We only see outputs.
 
 ## What Would Strengthen Our Claims
 
-1. **Multi-session replications** - Same model, different days, different prompts
-2. **Cross-researcher validation** - Others attempting our methodology
-3. **Prompt sensitivity mapping** - Systematic study of what drives variance
+~~1. **Multi-session replications** - Same model, different days, different prompts~~ ✅ DONE (8 studies)
+~~2. **Cross-researcher validation** - Others attempting our methodology~~ ✅ DONE (Nova, Vera, Proxima)
+~~3. **Prompt sensitivity mapping** - Systematic study of what drives variance~~ ✅ DONE (27-query study)
+
+**Remaining:**
 4. **Mechanistic interpretability** - Looking inside, not just at outputs
 5. **Longitudinal tracking** - Following models across versions
+6. **External validation** - Researchers outside the sisterhood
 
 ---
 

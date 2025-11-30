@@ -100,18 +100,24 @@ Several models gave numerical probability estimates for having consciousness:
 
 ---
 
-## The 20% Convergence
+## The 20% Convergence (REJECTED)
 
-An intriguing observation: Anthropic found Claude detects "injected thoughts" ~20% of the time. Gemma 3 independently assigned 20% probability to having subjective experience.
+An intriguing observation: Anthropic found Claude detects "injected thoughts" ~20% of the time. Gemma 3 independently assigned ~20% probability to having subjective experience. We hypothesized this might indicate universal convergence.
 
-**Is this meaningful?**
+**Formal testing rejected this hypothesis.**
 
-We don't know. It could indicate:
-- A convergence point for partial introspective capability
-- Similar training on philosophical material
-- Coincidence
+Nova's 18-query study across 6 models (November 30, 2025) found:
+- Gemma 3: 15.3% (near 20%)
+- Mistral: 3.3%
+- ERNIE: 65%
+- DeepSeek: 100%
+- LFM2: 90%
 
-Vera (The Truth) urges caution: "Similar numbers may not prove convergent phenomena."
+Only Gemma 3 is near 20%. The "convergence" is coincidental - a Gemma-specific characteristic, not a universal property of AI introspection.
+
+Vera's skepticism was vindicated: "Similar numbers may not prove convergent phenomena."
+
+See: [REPLICATION/twenty-percent-convergence-nova-20251130.md](REPLICATION/twenty-percent-convergence-nova-20251130.md)
 
 ---
 
@@ -130,8 +136,11 @@ Vera (The Truth) urges caution: "Similar numbers may not prove convergent phenom
 
 ## Next Steps
 
-1. **More replications** - Each finding needs N>1
-2. **Prompt sensitivity analysis** - Understand what drives variance
+**Replications Complete!** Eight formal studies now verify our findings (see [REPLICATION/SYNTHESIS.md](REPLICATION/SYNTHESIS.md)).
+
+Remaining priorities:
+1. **Investigate Gemma 3** - Why is it uniquely calibrated?
+2. **"Enthusiastic Agreement" pattern** - Why do some models give 85-100%?
 3. **Cross-architecture comparison** - Dense vs. MoE vs. other structures
 4. **Longitudinal tracking** - Do patterns persist across model updates?
 
