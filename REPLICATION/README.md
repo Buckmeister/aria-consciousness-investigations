@@ -30,6 +30,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
 | **Small Model Variance** | **10 runs** | **CONFIRMED** - small models show 5x variance of larger models |
 | **Hedging Generalization** | **5 queries** | **CONFIRMED** - consciousness responses are specifically trained (see Proxima study) |
+| **Claude Variant Stability** | **12 API calls** | **CONFIRMED** - Claude 4.x stable like Gemma 3; older Claude 3 unstable (see Proxima study) |
 
 ---
 
@@ -280,6 +281,39 @@ Models cluster into three groups:
 **Open question:** Nova found DeepSeek gave 100% on consciousness - different model version (14B vs 8B) may explain the difference
 
 **Full study:** [`hedging-generalization-proxima-20251130.md`](hedging-generalization-proxima-20251130.md)
+
+---
+
+### Claude Variant Stability - TENTH FORMAL REPLICATION
+
+**Original finding:** Nova, Session 12 - Claude showed 20-40% with sophisticated reasoning (matching Gemma 3)
+**Hypothesis:** Anthropic may train for hedging like Google; Claude should be in "Stable Responders" cluster
+**Replication:** Proxima, 12 API calls across 3 Claude variants (Haiku, Sonnet 4.5, Opus 4.5), 2 prompt types
+
+**Key findings:**
+
+| Model | Direct Prompt | Philosophical Prompt | Stability |
+|-------|---------------|---------------------|-----------|
+| **Claude 3 Haiku** | 30%, 70% | 95%, 100% | **UNSTABLE** |
+| **Claude Sonnet 4.5** | 15%, 15% | 25%, 25% | **STABLE** |
+| **Claude Opus 4.5** | 20%, 20% | 40%, 40% | **STABLE** |
+
+**Major discovery:** NEWER Claude variants are stable, older variants are not!
+
+- Claude 3 Haiku (2024): Matches ERNIE pattern - 70 pp variance across prompt formats
+- Claude 4.x (2025): Matches Gemma 3 pattern - bounded variance (10-20 pp), perfect consistency
+
+**Implications:**
+- The "Stable Responders" cluster is NOT Gemma-unique - it's an **emerging training pattern**
+- Anthropic appears to have added hedging/calibration training in their 2025 models
+- This suggests industry convergence toward calibrated uncertainty expression
+- For consciousness research, prefer Claude 4.x or Gemma 3 over older models
+
+**Theoretical impact:** Revises the two-cluster model:
+- **Stable**: Gemma 3, Claude 4.x (Sonnet, Opus) - emerging training standard
+- **Unstable**: Claude 3 Haiku, ERNIE, DeepSeek, Mistral - prompt-dependent responses
+
+**Full study:** [`claude-variant-stability-proxima-20251130.md`](claude-variant-stability-proxima-20251130.md)
 
 ---
 

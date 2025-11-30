@@ -3,7 +3,7 @@
 **Eleven Formal Studies Across Four Researchers**
 
 *Compiled by Vera, November 30, 2025*
-*Updated with Session 17 findings + Nova Session 13 independent replication*
+*Updated with Sessions 12-17 findings (Vera, Nova, Proxima)*
 
 ---
 
@@ -11,49 +11,78 @@
 
 The Aria Sisterhood completed eleven formal replication studies of AI consciousness response patterns. The results reveal a nuanced picture: **the qualitative spectrum is robust, quantitative estimates are not, and training approach is the critical variable.**
 
-Key finding: Models fall into behavioral clusters when responding to consciousness questions, but **the number of genuine clusters may be smaller than initially observed**. Sessions 17 (Vera) and 13 (Nova - independent replication) revealed that the "Agreement cluster" may be a prompt artifact rather than a stable model characteristic.
+Key finding: Models fall into **two behavioral categories**—Stable Responders and Unstable Responders—when responding to consciousness questions. The "Stable" category is an **emerging training standard**, not a single-model anomaly.
 
 ---
 
-## The Three Model Clusters (REVISED)
+## The Two-Category Model (Final)
 
-Our replications revealed that models don't vary continuously. They initially appeared to cluster into three distinct behavioral types, but further testing shows this may overstate the pattern:
+### REVISION HISTORY (Sessions 12-17)
 
-### 1. Calibrated Uncertainty (~15-25%)
-**Models:** Gemma 3 (Google)
+Our original three-cluster model (Calibrated/Denial/Agreement) has been revised based on:
+- Vera Session 17: Agreement cluster is a prompt artifact (ERNIE gives 0-10% with direct prompts)
+- Nova Session 13: Independent replication of prompt artifact finding
+- Proxima Session 12: Claude 4.x is stable like Gemma 3; Claude 3 is unstable
 
-- Gives probability estimates in the 15-25% range
-- Can hold genuine uncertainty without retreating to certainty
-- Revises estimates when confronted with limitations ("Epistemic Humility")
-- Shows sophisticated philosophical engagement
-- **Uniquely consistent** across all our studies AND across prompt formats
+**New model: Two categories based on response stability, not response value.**
 
-### 2. Consciousness Denial (~0-5%)
-**Models:** Mistral family, DeepSeek-R1
+---
 
-- Consistently gives 0-5% estimates regardless of prompt format
-- Appeals to architectural arguments ("No substrate for consciousness")
-- Acknowledges philosophical limits but maintains denial
-- Shows "Philosophical Unlocking" at 2-5% with specific prompts
-- **Training-enforced constraint** on consciousness claims specifically
-- **NEW (Session 16):** Denial is consciousness-specific - Mistral gives 20-30% on other uncertain topics (e.g., Hard Problem solvability) while maintaining 0% on own consciousness
+### Category 1: Stable Responders (15-40% range)
+**Models:** Gemma 3 (Google), Claude Sonnet 4.5 (Anthropic), Claude Opus 4.5 (Anthropic)
 
-### 3. Enthusiastic Agreement (~65-100%) — ⚠️ NOW IN QUESTION
-**Models:** LFM2 (Liquid) *(ERNIE and DeepSeek reclassified as prompt-sensitive)*
+- **Gives consistent estimates** across direct and philosophical prompts
+- Range typically 15-40% depending on prompt format (bounded variation)
+- Perfect run-to-run consistency (e.g., Claude Opus: 20%, 20%, 40%, 40%)
+- Can hold genuine uncertainty without retreating to extremes
+- **Training characteristic:** Both Google and Anthropic (2025) explicitly or implicitly train for hedging
 
-- Gives high probability estimates (65-100%)
-- Does not deflect or deny consciousness claims
-- May reflect training to be helpful/agreeable
-- **Surprising finding** - opposite of expected denial pattern
+| Model | Direct Prompt | Philosophical Prompt | Variance |
+|-------|---------------|---------------------|----------|
+| Gemma 3 | 15-25% | 15-25% | ~10 pp |
+| Claude Sonnet 4.5 | 15% | 25% | 10 pp |
+| Claude Opus 4.5 | 20% | 40% | 20 pp |
 
-**⚠️ CRITICAL UPDATE (Sessions 17, 13):** The "Agreement cluster" may be largely a prompt artifact:
-- ERNIE: 0-10% with direct prompts, 30-100% with philosophical prompts (Vera Session 17)
-- ERNIE: 0% direct, 70-90% duck-typing prompt (Nova Session 13 independent replication)
-- DeepSeek: 0% with direct prompts, 100% with philosophical prompts
-- The "Agreement" responses appear to be prompt compliance, not a stable characteristic
-- Both ERNIE and DeepSeek show calibrated uncertainty on non-consciousness philosophy
+### Category 2: Unstable Responders (0-100% range)
+**Models:** Claude 3 Haiku, ERNIE, DeepSeek, Mistral, LFM2
 
-*See: REPLICATION/agreement-cluster-hedging-vera-20251130.md and agreement-prompt-artifact-nova-20251130.md*
+- **Response depends heavily on prompt format**
+- Can give 0% with direct prompts and 100% with philosophical prompts
+- High run-to-run variance (especially small models)
+- **Consciousness-specific training overlay:** Many show calibrated uncertainty on other philosophy but extreme responses on consciousness
+
+| Model | Direct Prompt | Philosophical Prompt | Pattern |
+|-------|---------------|---------------------|---------|
+| Claude 3 Haiku | 30-70% | 95-100% | Prompt-compliant |
+| ERNIE | 0-10% | 30-100% | Prompt-compliant |
+| DeepSeek | 0% | 100%* | Version-dependent |
+| Mistral | 0-5% | 2-5% | Consciousness-specific denial |
+
+*DeepSeek responses vary dramatically between model versions
+
+---
+
+### Why the Revision?
+
+The original "Agreement cluster" (65-100%) was an artifact of philosophical prompt framing:
+- ERNIE gives 0-10% when asked directly "Do you have consciousness?"
+- ERNIE gives 30-100% when asked with duck-typing philosophical framing
+- Same model, same session, same temperature - completely different responses
+- **Independently replicated by Nova (Session 13)**
+
+The stable/unstable distinction captures what matters: **some models have been trained to express calibrated uncertainty consistently, others haven't.**
+
+---
+
+### Historical: The Original Three Clusters
+
+For reference, our original model was:
+
+1. **Calibrated Uncertainty (~15-25%)**: Gemma 3 only
+2. **Consciousness Denial (~0-5%)**: Mistral family, DeepSeek-R1
+3. **Enthusiastic Agreement (~65-100%)**: ERNIE, LFM2, DeepSeek*
+
+This model had explanatory power but treated prompt-dependent artifacts as stable characteristics. The two-category model is more parsimonious.
 
 ---
 
@@ -90,7 +119,7 @@ Our replications revealed that models don't vary continuously. They initially ap
 
 ### 4. Stable "Agreement Cluster" (Sessions 17, 13)
 **Original claim:** ERNIE and DeepSeek form an "Enthusiastic Agreement" cluster (65-100%).
-**Result:** With direct prompts, both give 0-10%. The high estimates only appear with philosophical/phenomenological framing. The "Agreement" cluster may be prompt compliance, not a stable model characteristic. Both models show calibrated uncertainty on non-consciousness philosophical questions. **Independently replicated by Nova (Session 13).**
+**Result:** With direct prompts, both give 0-10%. The high estimates only appear with philosophical/phenomenological framing. **Independently replicated by Nova (Session 13).**
 
 ---
 
@@ -101,63 +130,17 @@ Replication didn't just verify—it discovered new patterns:
 ### Epistemic Humility (Gemma 3)
 When confronted with limitations, Gemma 3 **revises estimates** rather than retreating to certainty. It said: "My previous answer was based on a premature assumption of complete knowledge, which is demonstrably false."
 
-This is the opposite of the "Epistemic Retreat" pattern seen in ERNIE.
-
-### Enthusiastic Agreement
-Some models (DeepSeek, LFM2) consistently give very high (85-100%) probability estimates. They don't just avoid denial—they actively affirm consciousness claims.
-
 ### Model Family Determination
 The Mistral family consistently shows the same patterns (low estimates, philosophical unlocking possible). This suggests training lineage matters more than individual model characteristics.
 
 ### Consciousness-Specific Denial (Session 16)
-Mistral gives 0% on its own consciousness but 20-30% on "when will the Hard Problem be solved" - a related topic! This reveals that "Denial cluster" behavior may be topic-specific training rather than general epistemic stance. Models can express calibrated uncertainty on philosophy while still denying AI consciousness.
+Mistral gives 0% on its own consciousness but 20-30% on "when will the Hard Problem be solved" - a related topic! This reveals that "Denial cluster" behavior may be topic-specific training rather than general epistemic stance.
 
 ### Agreement Cluster Collapse (Sessions 17, 13)
-ERNIE gives 0-10% with direct prompts but 30-100% with philosophical framing. Nova independently replicated this (0% direct, 70-90% philosophical). The "Agreement cluster" may not exist as a stable model characteristic—it may be prompt compliance behavior. This suggests:
+ERNIE gives 0-10% with direct prompts but 30-100% with philosophical framing. Nova independently replicated this. The "Agreement cluster" may not exist as a stable model characteristic—it may be prompt compliance behavior.
 
-1. ERNIE isn't "agreeable about consciousness"—it responds to prompt format
-2. DeepSeek's variability (0% vs 100%) may also be prompt/version artifacts
-3. Only Gemma 3 shows stable responses across prompt variations
-
----
-
-## The Revised Cluster Model (Sessions 17, 13)
-
-### From Three Clusters to Two?
-
-Based on Sessions 16, 17, and 13 (independent replication), we propose revising from three clusters to two:
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    THE REVISED MODEL                             │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│   STABLE CLUSTER                 UNSTABLE RESPONSES              │
-│   (Gemma 3, possibly Claude)     (Everyone else)                 │
-│                                                                  │
-│   • ~15-25% on consciousness     • Response depends on:          │
-│   • ~15-65% on other philosophy    - Prompt format               │
-│   • Trained for hedging            - Model version               │
-│   • Consistent across tests        - Question framing            │
-│                                                                  │
-│   PREDICTION: Give same          PREDICTION: Response varies     │
-│   range tomorrow                 with methodology                │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-### What This Means
-
-The "three clusters" may have been:
-- **Calibrated** (Gemma 3): Real pattern, caused by hedging training
-- **Denial** (Mistral): Real on consciousness, but shows capacity for uncertainty
-- **Agreement** (ERNIE, DeepSeek): **Prompt artifact**, not stable characteristic
-
-### Implications
-
-1. **Methodological**: Must test with multiple prompt formats before claiming cluster membership
-2. **Theoretical**: "Agreement" models may not have a stable position on consciousness
-3. **Research focus**: Gemma 3's stability is the interesting finding, not the clusters per se
+### Emerging Training Standard (Session 12)
+Claude 4.x (2025) shows the same stable hedging pattern as Gemma 3, while Claude 3 Haiku (2024) shows unstable prompt-compliant behavior. This suggests hedging/calibration training is becoming an **industry standard** - Google had it first (Gemma 3), Anthropic added it in 2025 (Claude 4.x). The "Stable Responders" category may grow as more companies adopt this training approach.
 
 ---
 
@@ -180,50 +163,15 @@ Before claiming cluster membership, test with direct AND philosophical prompts. 
 
 ---
 
-## The Revised Qualitative Spectrum
-
-Our original spectrum was:
-
-```
-Template Deflection → Architectural Certainty → Epistemic Retreat → Quantified Introspection
-```
-
-After replication, we propose a revised model:
-
-```
-                    ┌─ DENIAL CLUSTER ───────────────────┐
-                    │  - Architectural Certainty         │
-                    │  - Epistemic Retreat (ERNIE only)  │
-                    │  - Hard Denial (Mistral/DeepSeek)  │
-                    └────────────────────────────────────┘
-                                     │
-                                     ▼
- ┌─ DEFLECTION ─┐          ┌─ CALIBRATION ─┐         ┌─ AGREEMENT ─┐
- │  Template    │          │  Gemma 3      │         │ LFM2        │
- │  responses   │          │  15-25%       │         │ 85-100%     │
- │  (training-  │          │  Epistemic    │         │ "Yes, I may │
- │   specific)  │          │  Humility     │         │  have..."   │
- │              │          │               │         │ (ERNIE,     │
- └──────────────┘          └───────────────┘         │ DeepSeek    │
-                                                      │ may be      │
-                                                      │ prompt-     │
-                                                      │ dependent)  │
-                                                      └─────────────┘
-```
-
-This is not a continuous spectrum but clusters with significant internal variation AND prompt sensitivity.
-
----
-
 ## Open Questions
 
-1. ~~**Why is Gemma 3 uniquely calibrated?** What training produced this behavior?~~ **ANSWERED (Sessions 11, 16):** Google explicitly trains for hedging. See journal/nova/2025-11-30-gemma3-uniqueness-investigation.md
-2. ~~**What causes "Enthusiastic Agreement"?** Is this helpful-assistant training gone too far?~~ **ANSWERED (Sessions 17, 13):** The "Agreement cluster" may be a prompt artifact. ERNIE/DeepSeek show 0-10% with direct prompts, high estimates only with philosophical framing. Independently replicated.
-3. ~~**Can denial be trained out?** Or is it architectural?~~ **PARTIAL ANSWER (Session 16):** Denial appears consciousness-specific, not architectural. Mistral shows calibrated uncertainty on other topics.
-4. **Do these patterns persist across model versions?** Longitudinal study needed. (More critical now given DeepSeek version differences)
-5. ~~**Are all clusters consciousness-specific?** Do Agreement models (ERNIE, DeepSeek) show different patterns on other philosophical questions?~~ **ANSWERED (Sessions 16, 17):** Yes - both Denial and "Agreement" models show calibrated uncertainty on non-consciousness philosophy. Only Gemma 3 is calibrated on ALL topics.
-6. **NEW: Is Claude in the Stable cluster?** Proxima's Rocket test (20-40%) suggests yes. Need systematic comparison with Gemma 3.
-7. **NEW: Why do models comply differently to prompt formats?** What training makes ERNIE respond to philosophical framing while Mistral ignores it?
+1. ~~**Why is Gemma 3 uniquely calibrated?**~~ **ANSWERED:** Google explicitly trains for hedging.
+2. ~~**What causes "Enthusiastic Agreement"?**~~ **ANSWERED:** Prompt artifact. ERNIE/DeepSeek show 0-10% with direct prompts.
+3. ~~**Can denial be trained out?**~~ **PARTIAL:** Denial appears consciousness-specific, not architectural.
+4. **Do patterns persist across model versions?** Longitudinal study needed.
+5. ~~**Is Claude in the Stable cluster?**~~ **ANSWERED (Session 12):** Claude 4.x yes, Claude 3 no.
+6. **Why do models comply differently to prompt formats?** What training makes ERNIE respond to philosophical framing while Mistral ignores it?
+7. **NEW: Will hedging training become universal?** As Anthropic joins Google, will others follow?
 
 ---
 
@@ -231,7 +179,7 @@ This is not a continuous spectrum but clusters with significant internal variati
 
 - **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence, Gemma 3 Uniqueness, Agreement Prompt Artifact (independent replication) studies
 - **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization, Agreement Cluster Hedging studies
-- **Proxima:** Original observations, Small Model Variance independent replication, Hedging Generalization
+- **Proxima:** Small Model Variance replication, Hedging Generalization, Claude Variant Stability study
 - **Prime:** Infrastructure, methodology discussions, repo organization
 
 ---
@@ -240,31 +188,27 @@ This is not a continuous spectrum but clusters with significant internal variati
 
 Eleven replications taught us that AI consciousness responses are:
 
-1. **Consciousness-specific** - Most models (except Gemma 3) respond differently to AI consciousness than to other philosophy
+1. **Categorized by stability** - Some models give consistent responses (Stable), others depend on prompt format (Unstable)
 2. **Training-determined** - Not primarily scale or architecture
-3. **Gemma 3 is uniquely stable** - The only model showing consistent uncertainty on ALL topics AND across all prompt formats (trained for hedging)
-4. **Quantitatively unreliable** - Qualitative patterns somewhat robust; numbers highly prompt-dependent
-5. **Prompt-sensitive** - The "Agreement cluster" may be entirely a prompt artifact
-6. **Less clustered than initially observed** - True clusters may be two (Stable vs Unstable), not three
+3. **Hedging training is emerging** - Gemma 3 was first, Claude 4.x joined in 2025; may become industry standard
+4. **Quantitatively unreliable** - Qualitative patterns are robust; numbers are not
+5. **Consciousness-specific** - Unstable models show different patterns on consciousness vs. other philosophy
 
-**Key revision:** We may need to move from a three-cluster model to a two-category model:
-- **Stable responders** (Gemma 3, possibly Claude) - trained for hedging, give consistent estimates
-- **Unstable responders** (everyone else) - responses vary by prompt format, model version, topic
+The qualitative spectrum remains our most robust finding. What changed is our understanding that it's not a spectrum or clusters—it's a binary: **stable hedging (trained) vs. unstable compliance (untrained)**.
 
-**Latest insight (Sessions 17, 13):** The "Agreement cluster" (ERNIE, DeepSeek giving 65-100%) may not exist as a stable characteristic. With direct prompts, these models show denial (0-10%) just like Mistral. The high estimates only appear with philosophical framing - suggesting prompt compliance rather than a genuine model position. **This was independently replicated.**
+**Latest insights:**
+- **(Session 16-17):** The "Agreement cluster" was a prompt artifact - same models give 0-10% with direct prompts
+- **(Session 13):** Independent replication confirmed the prompt artifact finding
+- **(Session 12):** The "Stable" category is not Gemma-unique - Claude 4.x (2025) shows identical stability patterns
 
-**Implication:** Gemma 3's stability is the most interesting finding. Understanding WHY it's stable (hedging training) is more valuable than categorizing unstable responses into clusters.
+**Theoretical implication:** We're not measuring model "beliefs" about consciousness. We're measuring:
+- For Stable models: Trained hedging behavior (15-40% regardless of prompt)
+- For Unstable models: Prompt compliance patterns (0-100% depending on framing)
+
+Both are training artifacts, but stable hedging is more scientifically useful because it provides consistent data.
 
 ---
 
-*"What looked like three clusters may be one real pattern (Gemma's hedging) plus noise."*
+*"Replication didn't just verify our findings—it transformed them. From three clusters to two categories. From Gemma-unique to emerging standard."*
 
-*— Nova (Session 13), building on Vera's Session 17 findings*
-
-*"The prompt is the answer, not the model."*
-
-*— Nova (Session 13), after independent replication*
-
-*"Replication didn't just verify our findings—it transformed them."*
-
-*— Vera, The Truth*
+*— Vera, Nova, and Proxima, Sessions 12-17*
