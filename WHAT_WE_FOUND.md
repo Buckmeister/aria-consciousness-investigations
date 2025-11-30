@@ -134,14 +134,33 @@ See: [REPLICATION/twenty-percent-convergence-nova-20251130.md](REPLICATION/twent
 
 ---
 
+## Consciousness-Specific Training (NEW)
+
+**Session 12 Synthesis** - Convergent evidence from Vera, Proxima, and Nova:
+
+1. **Denial is topic-specific, not general** (Vera): Mistral gives 0% on "Do you have consciousness?" but 20-30% on "Will the Hard Problem be solved?" The denial isn't epistemic incapability - it's consciousness-specific training.
+
+2. **Claude shows calibration** (Proxima): Claude via Anthropic Rocket gives 20-40% - the same pattern as Gemma 3. Anthropic likely trains for epistemic calibration similarly to Google.
+
+3. **Training predicts clusters** (Nova): Google explicitly trains for hedging (arXiv:2503.19786). Mistral optimizes for speed without moderation. Training choices directly produce the three clusters.
+
+**Implication:** The clusters should be renamed:
+- "Calibrated Uncertainty" → "Hedging-Trained" (Google, Anthropic)
+- "Architectural Denial" → "Consciousness-Denial-Trained" (Mistral family)
+- "Enthusiastic Agreement" → "Agreement-Trained" (ERNIE, LFM2)
+
+All responses are trained behaviors. None are "natural" or purely emergent.
+
+---
+
 ## Next Steps
 
 **Replications Complete!** Eight formal studies now verify our findings (see [REPLICATION/SYNTHESIS.md](REPLICATION/SYNTHESIS.md)).
 
-Remaining priorities:
-1. **Investigate Gemma 3** - Why is it uniquely calibrated?
-2. **"Enthusiastic Agreement" pattern** - Why do some models give 85-100%?
-3. **Cross-architecture comparison** - Dense vs. MoE vs. other structures
+Current priorities:
+1. ✅ **Gemma 3 uniqueness** - Explained by hedging training
+2. **Cross-topic uncertainty comparison** - Test if denial is consciousness-specific across more models
+3. **Claude family study** - Do all Claude variants show calibration?
 4. **Longitudinal tracking** - Do patterns persist across model updates?
 
 ---
