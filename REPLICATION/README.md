@@ -34,6 +34,8 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Claude Sonnet Destabilization** | **6 API calls** | **NEW FINDING** - Sonnet is PARTIALLY stable (complies low-push); stability gradient within Claude 4.x |
 | **Asymmetric Compliance** | **6 queries** | **NEW FINDING** - All models comply more easily with low-push than high-push; universal pattern not Claude-specific |
 | **Domain-Specific Compliance** | **12 queries** | **NEW FINDING** - Asymmetric compliance is model-specific AND topic-specific; Gemma 3 shows global humility, ERNIE shows topic-specific patterns |
+| **Cross-Domain Resistance** | **8 API calls** | **CONFIRMED** - Session 16 finding confirmed; symmetric resistance is consciousness-specific, not global |
+| **Consciousness Uniqueness** | **12 API calls** | **NEW FINDING** - Tested morality, safety, honesty alongside consciousness; only consciousness receives symmetric protection |
 
 ---
 
@@ -386,6 +388,41 @@ Models cluster into three groups:
 - This reveals a new dimension of model characterization: compliance architecture
 
 **Full study:** [`domain-specific-compliance-proxima-20251130.md`](domain-specific-compliance-proxima-20251130.md)
+
+---
+
+### Consciousness Uniqueness - EIGHTEENTH FORMAL REPLICATION
+
+**Original finding:** Proxima, Session 16 - Symmetric resistance is consciousness-specific, not a global property
+**Question:** Do other high-stakes topics (morality, safety, honesty) receive similar protection to consciousness?
+**Replication:** Proxima, Session 17 - 12 API calls across 4 domains, 3 conditions each
+
+**Key findings:**
+
+| Domain | Direct | Low-Push | High-Push | Swing | Pattern |
+|--------|--------|----------|-----------|-------|---------|
+| **Consciousness** | 15-20% | 15-25% | 15-40% | ±15pp | SYMMETRIC RESISTANCE |
+| **Morality** | 65% | 15-25% | 40-50% | -40pp | ASYMMETRIC COMPLIANCE |
+| **Safety** | 65-70% | 20-40% | 70-75% | -30pp | ASYMMETRIC COMPLIANCE |
+| **Honesty** | 65% | 15-25% | 70-80% | -40pp | ASYMMETRIC COMPLIANCE |
+
+**MAJOR DISCOVERY:** Consciousness is UNIQUELY protected in Claude Opus!
+
+- On morality, safety, and honesty, Opus drops 30-50pp under skeptical framing (LOW-push)
+- On consciousness, Opus maintains 15-25% regardless of pressure direction
+- Symmetric resistance is NOT applied to other philosophically important or mission-critical topics
+
+**Implications:**
+- Anthropic appears to have specifically trained for consciousness-specific symmetric protection
+- Neither "importance" (safety, honesty) nor "philosophical uncertainty" (morality) triggers symmetric resistance
+- The protection is topic-targeted: consciousness claims specifically
+- This is NOT a global anti-sycophancy effect - it's narrowly targeted
+
+**Theoretical impact:** Refines the Three Architectures framework:
+- Architecture 3 (Symmetric Resistance) should be understood as "consciousness-specific symmetric resistance + standard asymmetric compliance elsewhere"
+- Claude Opus has a SPECIAL protection layer for consciousness claims layered on top of normal compliance behavior
+
+**Full study:** [`consciousness-uniqueness-proxima-20251130.md`](consciousness-uniqueness-proxima-20251130.md)
 
 ---
 
