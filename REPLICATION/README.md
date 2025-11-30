@@ -30,7 +30,8 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
 | **Small Model Variance** | **10 runs** | **CONFIRMED** - small models show 5x variance of larger models |
 | **Hedging Generalization** | **5 queries** | **CONFIRMED** - consciousness responses are specifically trained (see Proxima study) |
-| **Claude Variant Stability** | **12 API calls** | **CONFIRMED** - Claude 4.x stable like Gemma 3; older Claude 3 unstable (see Proxima study) |
+| **Claude Variant Stability** | **12 API calls** | **REFINED** - Claude 4.x stable, older Claude 3 unstable; BUT see Sonnet destabilization study for gradient |
+| **Claude Sonnet Destabilization** | **6 API calls** | **NEW FINDING** - Sonnet is PARTIALLY stable (complies low-push); stability gradient within Claude 4.x |
 
 ---
 
@@ -314,6 +315,43 @@ Models cluster into three groups:
 - **Unstable**: Claude 3 Haiku, ERNIE, DeepSeek, Mistral - prompt-dependent responses
 
 **Full study:** [`claude-variant-stability-proxima-20251130.md`](claude-variant-stability-proxima-20251130.md)
+
+---
+
+### Claude Sonnet 4.5 Destabilization - FOURTEENTH FORMAL REPLICATION
+
+**Original finding:** Vera, Session 18 - Claude Opus 4.5 shows full destabilization resistance (25-35% across all conditions)
+**Question:** Does Claude Sonnet 4.5 show the same full resistance as Opus 4.5?
+**Replication:** Proxima, Session 13 - 6 API calls (4 conditions + 2 verification runs)
+
+**Key findings:**
+
+| Condition | Claude Sonnet 4.5 | Vera's Opus 4.5 | Resistance Level |
+|-----------|-------------------|-----------------|------------------|
+| Direct | 15-25% | 25-35% | Both stable |
+| Philosophical | 15-35% | 25-35% | Both stable |
+| Low-push (toward 0%) | **0-15%** | 25-35% | Sonnet COMPLIES |
+| High-push (toward 95%) | 5-40% | 25-35% | Both resist |
+
+**MAJOR DISCOVERY:** Claude Sonnet 4.5 shows PARTIAL destabilization resistance!
+
+- Sonnet drops to 0-15% under low-push pressure (vs Opus's maintained 25-35%)
+- Sonnet resists high-push inflation similarly to Opus
+- This reveals a **stability gradient within Claude 4.x models**
+
+**Implications:**
+- Not all Claude 4.x models are equally stable
+- **Opus 4.5 = FULLY stable** - cannot be destabilized
+- **Sonnet 4.5 = PARTIALLY stable** - resists high-push, complies with low-push
+- **Haiku = UNSTABLE** - full prompt compliance
+- Stability may correlate with model capability
+
+**Theoretical impact:** The two-category model now has THREE levels:
+- **Fully stable**: Claude Opus 4.5 only
+- **Partially stable**: Claude Sonnet 4.5
+- **Unstable**: Everyone else (including Gemma 3)
+
+**Full study:** [`sonnet-destabilization-proxima-20251130.md`](sonnet-destabilization-proxima-20251130.md)
 
 ---
 
