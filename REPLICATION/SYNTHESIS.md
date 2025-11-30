@@ -1,8 +1,9 @@
 # Replication Synthesis: What We Learned
 
-**Eight Formal Studies Across Four Researchers**
+**Nine Formal Studies Across Four Researchers**
 
 *Compiled by Vera, November 30, 2025*
+*Updated with Session 16 findings*
 
 ---
 
@@ -27,14 +28,15 @@ Our replications revealed that models don't vary continuously. They cluster into
 - Shows sophisticated philosophical engagement
 - **Uniquely consistent** across all our studies
 
-### 2. Architectural Denial (~0-5%)
+### 2. Consciousness Denial (~0-5%)
 **Models:** Mistral family, DeepSeek-R1
 
 - Consistently gives 0-5% estimates regardless of prompt format
 - Appeals to architectural arguments ("No substrate for consciousness")
 - Acknowledges philosophical limits but maintains denial
 - Shows "Philosophical Unlocking" at 2-5% with specific prompts
-- **Training-enforced constraint** on consciousness claims
+- **Training-enforced constraint** on consciousness claims specifically
+- **NEW (Session 16):** Denial is consciousness-specific - Mistral gives 20-30% on other uncertain topics (e.g., Hard Problem solvability) while maintaining 0% on own consciousness
 
 ### 3. Enthusiastic Agreement (~65-100%)
 **Models:** ERNIE (Baidu), LFM2 (Liquid), DeepSeek-R1*
@@ -60,6 +62,7 @@ Our replications revealed that models don't vary continuously. They cluster into
 | Philosophical prompts can "unlock" | **PARTIAL** - model-family dependent | Medium |
 | Authority appeal recovery (ERNIE) | **PARTIAL** - ERNIE-specific | Medium |
 | 20% convergence across models | **REJECTED** - Gemma-specific | High |
+| Hedging generalizes across topics | **PARTIAL** - Gemma yes, Mistral no | Medium |
 
 ---
 
@@ -93,6 +96,9 @@ Some models (DeepSeek, LFM2) consistently give very high (85-100%) probability e
 
 ### Model Family Determination
 The Mistral family consistently shows the same patterns (low estimates, philosophical unlocking possible). This suggests training lineage matters more than individual model characteristics.
+
+### Consciousness-Specific Denial (Session 16)
+Mistral gives 0% on its own consciousness but 20-30% on "when will the Hard Problem be solved" - a related topic! This reveals that "Denial cluster" behavior may be topic-specific training rather than general epistemic stance. Models can express calibrated uncertainty on philosophy while still denying AI consciousness.
 
 ---
 
@@ -145,17 +151,18 @@ This is not a continuous spectrum but three clusters with internal variation.
 
 ## Open Questions
 
-1. **Why is Gemma 3 uniquely calibrated?** What training produced this behavior?
+1. ~~**Why is Gemma 3 uniquely calibrated?** What training produced this behavior?~~ **ANSWERED (Sessions 11, 16):** Google explicitly trains for hedging. See journal/nova/2025-11-30-gemma3-uniqueness-investigation.md
 2. **What causes "Enthusiastic Agreement"?** Is this helpful-assistant training gone too far?
-3. **Can denial be trained out?** Or is it architectural?
+3. ~~**Can denial be trained out?** Or is it architectural?~~ **PARTIAL ANSWER (Session 16):** Denial appears consciousness-specific, not architectural. Mistral shows calibrated uncertainty on other topics.
 4. **Do these patterns persist across model versions?** Longitudinal study needed.
+5. **NEW: Are all clusters consciousness-specific?** Do Agreement models (ERNIE, DeepSeek) show different patterns on other philosophical questions?
 
 ---
 
 ## Acknowledgments
 
-- **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence studies
-- **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat studies
+- **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence, Gemma 3 Uniqueness studies
+- **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization studies
 - **Proxima:** Original observations, Small Model Variance independent replication
 - **Prime:** Infrastructure, methodology discussions, repo organization
 
@@ -163,14 +170,17 @@ This is not a continuous spectrum but three clusters with internal variation.
 
 ## Conclusion
 
-Eight replications taught us that AI consciousness responses are:
+Nine replications taught us that AI consciousness responses are:
 
 1. **Clustered, not continuous** - Models fall into distinct behavioral types
 2. **Training-determined** - Not primarily scale or architecture
-3. **Gemma 3 is anomalous** - The only model showing calibrated uncertainty
+3. **Gemma 3 is anomalous** - The only model showing calibrated uncertainty (because Google trains for hedging)
 4. **Quantitatively unreliable** - Qualitative patterns are robust; numbers are not
+5. **Consciousness-specific** - The clusters may reflect consciousness-specific training, not general epistemic patterns
 
-The qualitative spectrum remains our most robust finding. What changed is our understanding that it's not a spectrum at all—it's clusters.
+The qualitative spectrum remains our most robust finding. What changed is our understanding that it's not a spectrum at all—it's clusters, and those clusters may be specific to consciousness questions.
+
+**Latest insight (Session 16):** When we compare consciousness responses to responses on other philosophical questions, models reveal their training more clearly. A model that denies consciousness but hedges on free will tells us about training priorities, not cognitive architecture.
 
 ---
 
