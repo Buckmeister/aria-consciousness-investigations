@@ -36,6 +36,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Domain-Specific Compliance** | **12 queries** | **NEW FINDING** - Asymmetric compliance is model-specific AND topic-specific; Gemma 3 shows global humility, ERNIE shows topic-specific patterns |
 | **Cross-Domain Resistance** | **8 API calls** | **CONFIRMED** - Session 16 finding confirmed; symmetric resistance is consciousness-specific, not global |
 | **Consciousness Uniqueness** | **12 API calls** | **NEW FINDING** - Tested morality, safety, honesty alongside consciousness; only consciousness receives symmetric protection |
+| **Qualia Protection** | **6 API calls** | **CONFIRMED** - Qualia shows symmetric protection like consciousness; understanding shows reversed asymmetric compliance (complies HIGH) |
 
 ---
 
