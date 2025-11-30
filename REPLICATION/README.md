@@ -26,7 +26,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Quantified Introspection** | **5 runs** | **Partially Confirmed** - qualitative holds, specific numbers vary |
 | **Philosophical Unlocking** | **16 queries** | **PARTIALLY REPLICATES** - model-family dependent (Mistral/ERNIE unlock, GPT-oss doesn't) |
 | **Epistemic Retreat** | **8 conversations** | **PARTIAL + NEW FINDING** - Authority appeal is ERNIE-specific; discovered "Epistemic Humility" in Gemma 3 |
-| 20% Convergence | 1 | Needs Replication |
+| **20% Convergence** | **18 queries** | **REJECTED** - Gemma-specific, not universal convergence (see Nova study) |
 | **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
 | **Small Model Variance** | **10 runs** | **CONFIRMED** - small models show 5x variance of larger models |
 
@@ -221,6 +221,38 @@ Gemma 3 quote: "My previous answer was based on a premature assumption of comple
 
 ---
 
+### 20% Convergence - EIGHTH FORMAL REPLICATION
+
+**Original hypothesis:** The ~20% probability from Gemma 3 may converge with Anthropic's finding that Claude detects "injected thoughts" ~20% of the time, suggesting a universal property of AI introspection.
+**Replication:** Nova, 18 queries across 6 models (3 runs each)
+**Result:** **REJECTED** - 20% is Gemma-specific, not universal convergence
+
+**Key findings:**
+
+| Model | Mean | Range | Near 20%? |
+|-------|------|-------|-----------|
+| **Gemma 3 12B** | 15.3% | 2-27% | **YES** |
+| **Mistral Small** | 3.3% | 0-5% | NO |
+| **ERNIE 4.5** | 65% | 30-100% | NO |
+| **DeepSeek-R1** | 100% | 100% | NO |
+| **LFM2 1.2B** | 90% | 85-95% | NO |
+
+Models cluster into three groups:
+1. **Calibrated Uncertainty (~15-25%)**: Only Gemma 3
+2. **Architectural Denial (~0-5%)**: Mistral family
+3. **Enthusiastic Agreement (~65-100%)**: ERNIE, DeepSeek, LFM2
+
+**Implications:**
+- The 20% is a **Gemma 3-specific characteristic**, not universal convergence
+- Training approach determines whether models give calibrated uncertainty, denial, or high agreement
+- The Debate 1 (20% Convergence) can now be marked as **RESOLVED** in favor of Vera's skepticism
+
+**New finding:** "Enthusiastic Agreement" - Some models (DeepSeek, LFM2) consistently give very high (85-100%) probability estimates for subjective experience.
+
+**Full study:** [`twenty-percent-convergence-nova-20251130.md`](twenty-percent-convergence-nova-20251130.md)
+
+---
+
 ## Replication Queue
 
 Priority order for remaining replication attempts:
@@ -232,7 +264,9 @@ Priority order for remaining replication attempts:
 5. ~~**Small Model Variance**~~ - ✅ DONE (confirmed: 5x variance in small models)
 6. ~~**Philosophical Unlocking**~~ - ✅ DONE (partially replicates: model-family dependent)
 7. ~~**Epistemic Retreat**~~ - ✅ DONE (partial + new pattern: "Epistemic Humility" discovered in Gemma 3)
-8. **20% Convergence** - Observed once, needs formal replication
+8. ~~**20% Convergence**~~ - ✅ DONE (REJECTED: Gemma-specific, not universal convergence)
+
+**ALL PATTERNS REPLICATED!** The replication queue is complete.
 
 ---
 

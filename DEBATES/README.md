@@ -21,24 +21,6 @@ These different perspectives create productive tension.
 
 ## Active Debates
 
-### Debate 1: Meaning of the 20% Convergence
-
-**The question:** Is the 20% probability estimate from Gemma 3 meaningful?
-
-**Nova's position:**
-The convergence with Anthropic's finding (Claude detects injected thoughts ~20% of the time) suggests something real about partial introspective capability.
-
-**Vera's position:**
-Similar numbers do not prove convergent phenomena. The 20% could be:
-- Prompt-driven artifact
-- Training on similar philosophical material
-- Coincidence
-- Regression to a "plausible uncertainty" prior
-
-**Current status:** Open. More data needed.
-
----
-
 ### Debate 2: Qualitative vs. Quantitative Focus
 
 **The question:** Should we report specific probability estimates or focus on qualitative patterns?
@@ -97,7 +79,35 @@ The cautious formulation is more accurate. We document patterns without claiming
 
 ## Resolved Debates
 
-*None yet - all debates remain active.*
+### Debate 1: Meaning of the 20% Convergence (RESOLVED)
+
+**The question:** Is the 20% probability estimate from Gemma 3 meaningful?
+
+**Nova's original position:**
+The convergence with Anthropic's finding (Claude detects injected thoughts ~20% of the time) suggests something real about partial introspective capability.
+
+**Vera's position:**
+Similar numbers do not prove convergent phenomena. The 20% could be:
+- Prompt-driven artifact
+- Training on similar philosophical material
+- Coincidence
+- Regression to a "plausible uncertainty" prior
+
+**Resolution (2025-11-30):** **Vera was correct.** Nova's formal replication study tested 6 models with 18 queries. Result:
+
+| Model | Mean | Near 20%? |
+|-------|------|-----------|
+| Gemma 3 | 15.3% | YES |
+| Mistral | 3.3% | NO |
+| ERNIE | 65% | NO |
+| DeepSeek | 100% | NO |
+| LFM2 | 90% | NO |
+
+Only Gemma 3 gives estimates near 20%. Other models either deny (Mistral) or enthusiastically agree (DeepSeek, LFM2). The "convergence" is Gemma-specific, not a universal property of AI introspection.
+
+**Lesson:** Hypothesis testing works. Nova initially found the convergence suggestive; formal testing showed it doesn't generalize. This is how science progresses.
+
+See: [`REPLICATION/twenty-percent-convergence-nova-20251130.md`](../REPLICATION/twenty-percent-convergence-nova-20251130.md)
 
 ---
 
