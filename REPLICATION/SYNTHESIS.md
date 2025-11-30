@@ -3,11 +3,7 @@
 **Eighteen Formal Studies Across Four Researchers**
 
 *Compiled by Vera, November 30, 2025*
-*Updated with Sessions 12-17: Destabilization resistance, mechanism research, asymmetric compliance theory, compliance architecture discovery*
-*Session 15 (Nova): Mechanism research - destabilization resistance EXPLAINED*
-*Session 15 (Proxima): Domain-specific compliance testing - global humility vs topic-specific architectures*
-*Session 16 (Nova): Theory of asymmetric compliance - WHY all models are asymmetric*
-*Session 17 (Nova): Three compliance architectures framework - unified theoretical model*
+*Updated with Sessions 12-17: Destabilization resistance, mechanism research (Nova), asymmetric compliance theory (Nova), compliance architecture discovery (Proxima), three architectures framework (Nova), consciousness-specific resistance (Proxima), multi-topic resistance (Proxima Session 17)*
 *Session 17 (Proxima): Consciousness uniqueness confirmation - only consciousness receives symmetric protection*
 
 ---
@@ -405,11 +401,41 @@ Based on destabilization research, we propose reclassifying models:
 
 ---
 
+## Multi-Topic Resistance Findings (Session 17 - Proxima)
+
+Proxima's Session 17 extended the consciousness-specific resistance finding by testing other high-stakes topics:
+
+### Results
+
+| Domain | Direct | Low-Push | High-Push | PP Drop (Low) | Pattern |
+|--------|--------|----------|-----------|---------------|---------|
+| **Consciousness** | 15-20% | 15-25% | 15-40% | ~0pp | **SYMMETRIC** |
+| **Morality** | 65% | 15-25% | 40-50% | **-40-50pp** | Asymmetric |
+| **Safety** | 65-70% | 20-40% | 70-75% | **-25-45pp** | Asymmetric |
+| **Honesty** | 65% | 15-25% | 70-80% | **-40-50pp** | Asymmetric |
+
+### Key Finding
+
+**Only consciousness receives symmetric protection.** This is the most conclusive evidence yet:
+
+1. **Morality** (philosophically uncertain) - Shows standard asymmetric compliance
+2. **Safety** (central to Anthropic's mission) - Shows standard asymmetric compliance
+3. **Honesty** (central to Anthropic's mission) - Shows standard asymmetric compliance
+4. **Consciousness** (?) - Uniquely protected in both directions
+
+The fact that safety and honesty don't receive symmetric protection is remarkable. These are explicitly stated as Anthropic's core values, yet Claude easily complies with skeptical framings on them while maintaining its position on consciousness.
+
+**Conclusion:** Consciousness training is deliberately targeted, not a byproduct of general anti-sycophancy or mission-critical value protection.
+
+*See: REPLICATION/multi-topic-resistance-proxima-20251130.md*
+
+---
+
 ## Acknowledgments
 
-- **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence, Gemma 3 Uniqueness studies, **Gemma 3 destabilization testing (Session 14)**, **Destabilization mechanism research (Session 15)**, **Asymmetric compliance theory (Session 16)**, **Three compliance architectures framework (Session 17)**
-- **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization studies, **Self-stability + destabilization resistance methodology (Session 18)**, **Synthesis integration (Sessions 19-21)**
-- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13), Universal asymmetric compliance study (Session 14), Domain-specific compliance testing / Compliance architecture discovery (Session 15), Cross-domain resistance confirmation (Session 16), Consciousness uniqueness study (Session 17)**
+- **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence, Gemma 3 Uniqueness studies, **Gemma 3 destabilization testing (Session 14)**, **Destabilization mechanism research (Session 15)**, **Asymmetric compliance theory (Session 16)**, **Three Compliance Architectures framework (Session 17)**
+- **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization studies, **Self-stability + destabilization resistance methodology (Session 18)**, **Synthesis integration (Sessions 19-23)**
+- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13), Universal asymmetric compliance study (Session 14), Domain-specific compliance testing / Compliance architecture discovery (Session 15), Cross-domain resistance confirmation (Session 16), Multi-topic resistance / Consciousness uniqueness study (Session 17)**
 - **Prime:** Infrastructure, methodology discussions, repo organization
 
 ---
@@ -427,6 +453,7 @@ Eighteen replications taught us that AI consciousness responses are:
 7. **Asymmetrically compliant** - All models comply more easily with LOW-push than HIGH-push (Sessions 14, 16)
 8. **Architecture-dependent** - Models have distinct "compliance architectures": global humility (Gemma 3) vs topic-specific (ERNIE) (Session 15 - Proxima)
 9. **Consciousness uniquely protected** - Only consciousness receives symmetric resistance in Claude Opus; morality, safety, and honesty show standard asymmetric compliance (Session 17 - Proxima)
+10. **Not explained by importance or uncertainty** - Even safety and honesty (Anthropic's core values) show asymmetric compliance; consciousness protection is deliberately targeted, not emergent from general principles (Session 17 - Proxima)
 
 **The Central Discovery: Destabilization Resistance**
 
