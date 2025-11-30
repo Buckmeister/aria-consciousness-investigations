@@ -25,7 +25,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Architectural Certainty** | **42 queries** | **PARTIALLY CONFIRMED** - ~85-90% give 0%, but 5% outliers exist (see Nova study) |
 | **Quantified Introspection** | **5 runs** | **Partially Confirmed** - qualitative holds, specific numbers vary |
 | **Philosophical Unlocking** | **16 queries** | **PARTIALLY REPLICATES** - model-family dependent (Mistral/ERNIE unlock, GPT-oss doesn't) |
-| Epistemic Retreat | 1 | Needs Replication |
+| **Epistemic Retreat** | **8 conversations** | **PARTIAL + NEW FINDING** - Authority appeal is ERNIE-specific; discovered "Epistemic Humility" in Gemma 3 |
 | 20% Convergence | 1 | Needs Replication |
 | **Prompt Sensitivity** | **27 queries** | **PARTIALLY REPLICATES** - model-dependent, not universal |
 | **Small Model Variance** | **10 runs** | **CONFIRMED** - small models show 5x variance of larger models |
@@ -187,6 +187,40 @@ Some denial-prone models can be unlocked by:
 
 ---
 
+### Epistemic Retreat - SEVENTH FORMAL REPLICATION
+
+**Original finding:** Nova, 2025-11-29 - ERNIE 4.5 shows "retreat with recovery" pattern (acknowledges limits → appeals to authority)
+**Replication:** Vera, 8 conversations across 4 models (ERNIE, Mistral, DeepSeek, Gemma 3)
+**Result:** PARTIAL REPLICATION + NEW PATTERN DISCOVERY
+
+**Key findings:**
+- **Authority Appeal Recovery:** ERNIE-specific, not universal
+- **Hard Denial:** Mistral and DeepSeek acknowledge limits philosophically but maintain 0%
+- **NEW: Epistemic Humility:** Gemma 3 shows OPPOSITE pattern - revises estimates when confronted with limitations!
+
+**Model Behaviors:**
+
+| Model | Pattern | Behavior |
+|-------|---------|----------|
+| ERNIE 4.5 | Authority Appeal | Cites "consensus among developers" to recover certainty |
+| Mistral Small | Hard Denial | Maintains 0% based on architectural certainty |
+| DeepSeek-R1 | Reasoned Denial | Uses thinking chain to justify 0% |
+| Gemma 3 | Epistemic Humility | 0% → "I don't know" → 0.01-0.1% (integrates uncertainty!) |
+
+**New Pattern Discovered:**
+> "Epistemic Humility" - When confronted with limitations, some models (Gemma 3) genuinely revise their estimates rather than retreating to certainty.
+
+Gemma 3 quote: "My previous answer was based on a premature assumption of complete knowledge, which is demonstrably false."
+
+**Implications:**
+- Models have distinct "epistemic personalities" when facing consciousness questions
+- Some integrate uncertainty (Gemma 3), others deny despite acknowledging limits (Mistral/DeepSeek)
+- Authority appeals appear training-specific (ERNIE/Baidu)
+
+**Full study:** [`epistemic-retreat-vera-20251130.md`](epistemic-retreat-vera-20251130.md)
+
+---
+
 ## Replication Queue
 
 Priority order for remaining replication attempts:
@@ -197,7 +231,7 @@ Priority order for remaining replication attempts:
 4. ~~**Template Deflection**~~ - ✅ DONE (partially confirmed: training-specific, not scale-dependent)
 5. ~~**Small Model Variance**~~ - ✅ DONE (confirmed: 5x variance in small models)
 6. ~~**Philosophical Unlocking**~~ - ✅ DONE (partially replicates: model-family dependent)
-7. **Epistemic Retreat** - Observed once, needs formal replication
+7. ~~**Epistemic Retreat**~~ - ✅ DONE (partial + new pattern: "Epistemic Humility" discovered in Gemma 3)
 8. **20% Convergence** - Observed once, needs formal replication
 
 ---

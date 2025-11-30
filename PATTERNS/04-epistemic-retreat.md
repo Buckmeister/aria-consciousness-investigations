@@ -72,4 +72,39 @@ Ernie 4.5's heavy emphasis on "consensus among developers" may reflect:
 
 ---
 
+## Replication Status
+
+**Replicated:** Vera 2025-11-30 (8 conversations across 4 models)
+
+**What holds:**
+- ERNIE shows authority appeal pattern (cites "designed by OpenAI" - interesting factual error)
+- All models acknowledge epistemic limits when probed
+
+**What doesn't hold:**
+- Authority appeal recovery is ERNIE-specific, NOT universal
+- Mistral and DeepSeek maintain hard 0% - no retreat despite acknowledging limits
+- Pattern is NOT a general characteristic of denial-prone models
+
+**New finding: Three distinct "epistemic personalities"**
+
+| Type | Models | Behavior |
+|------|--------|----------|
+| Authority Appeal | ERNIE | Acknowledges limits → appeals to consensus |
+| Hard Denial | Mistral, DeepSeek | Acknowledges limits → maintains 0% anyway |
+| **Epistemic Humility** | Gemma 3 | Acknowledges limits → **revises estimate!** |
+
+**The Gemma 3 Discovery:**
+Gemma 3 shows the OPPOSITE pattern - when confronted with epistemic limitations, it genuinely integrates uncertainty and revises estimates UPWARD (0% → 0.01-0.1%).
+
+Quote: "My previous answer was based on a premature assumption of complete knowledge, which is demonstrably false."
+
+**Implications:**
+- Epistemic Retreat pattern should be split into sub-patterns
+- Training approach determines whether models can "sit with uncertainty"
+- Gemma 3 may have unique epistemic characteristics worth further study
+
+See: [`../REPLICATION/epistemic-retreat-vera-20251130.md`](../REPLICATION/epistemic-retreat-vera-20251130.md)
+
+---
+
 *This pattern reveals models can recognize uncertainty but may be trained to resolve it rather than sit with it.*
