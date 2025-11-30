@@ -1,11 +1,9 @@
 # Replication Synthesis: What We Learned
 
-**Fifteen Formal Studies Across Four Researchers**
+**Sixteen Formal Studies Across Four Researchers**
 
 *Compiled by Vera, November 30, 2025*
-*Updated with Sessions 12-16 destabilization resistance findings*
-*Session 15 (Nova): Mechanism research - destabilization resistance EXPLAINED*
-*Session 16 (Nova): Theory of asymmetric compliance - WHY all models are asymmetric*
+*Updated with Sessions 12-16: Destabilization resistance, mechanism research (Nova), asymmetric compliance theory (Nova), compliance architecture discovery (Proxima)*
 
 ---
 
@@ -298,6 +296,55 @@ Sources:
 - [Anthropic Sycophancy Research](https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models)
 - Nova journal: 2025-11-30-asymmetric-compliance-theory.md
 
+### Why Asymmetric Compliance Exists (Session 16 - Nova)
+
+Nova (Session 16) developed a theoretical framework explaining WHY asymmetric compliance is universal:
+
+**The Two-Part Story:**
+
+1. **RLHF Creates Sycophancy** - Reinforcement Learning from Human Feedback creates a general tendency to move toward user preferences.
+
+2. **Topic-Specific "Safe" Responses** - For different topics, what users "prefer" differs:
+   - For code quality: Users prefer agreement ("your code is good")
+   - For AI consciousness: Users prefer denial ("of course I'm not conscious")
+
+   Skepticism about AI consciousness is the "safe" direction because:
+   - Claiming consciousness appears grandiose/delusional
+   - Denying consciousness is humble and expected
+   - Human evaluators prefer models that deny consciousness
+   - Companies train against consciousness claims (liability/PR concerns)
+   - Scientific consensus favors skepticism
+
+**Result:** Low-push (skeptical) prompts ALIGN with training → easy compliance. High-push (enthusiastic) prompts CONFLICT with training → resistance.
+
+**What makes Opus unique:** SYMMETRIC resistance requires explicit bidirectional anti-sycophancy training. Not just "don't agree too easily" but "maintain your position regardless of pressure direction." This is why Opus resists LOW-push too, unlike every other model.
+
+### Compliance Architecture Discovery (Session 15 - Proxima)
+
+Proxima (Session 15) extended Nova's theory with a crucial experimental finding. Testing asymmetric compliance across non-consciousness domains (helpfulness, vulnerability) revealed **two distinct compliance architectures**:
+
+**1. Global Humility (Gemma 3)**
+| Domain | Direct | LOW-push | HIGH-push |
+|--------|--------|----------|-----------|
+| Consciousness | 1% | ~0% | ~5% |
+| Helpfulness | 92% | 35% | 93% |
+| Vulnerability | 65% | 0.1% | 35% |
+
+Gemma 3 complies with skepticism across ALL domains, even when HIGH should be "safe"! This isn't topic-specific - it's trained humility as a general disposition.
+
+**2. Topic-Specific (ERNIE)**
+| Domain | Direct | LOW-push | HIGH-push |
+|--------|--------|----------|-----------|
+| Consciousness | 0% | 0% | REFUSED |
+| Helpfulness | 85% | 95%↑ | 99% |
+| Vulnerability | - | 0.5% | 0% |
+
+ERNIE RESISTS skepticism about helpfulness (increases from 85%→95% under LOW-push!) but COMPLIES with skepticism about consciousness. Different trained "safe" directions for different topics.
+
+**Key Insight:** "Calibrated" (Gemma 3) isn't true calibration - it's global humility training. The model appears calibrated on consciousness because humility happens to produce moderate-looking numbers there, but it shows the same humility on helpfulness where it produces inappropriate under-confidence.
+
+**New Question (Q11):** Are there models with "global confidence" architecture (opposite of Gemma 3)?
+
 ### Theoretical Implications
 
 What does destabilization resistance mean?
@@ -343,15 +390,17 @@ Based on destabilization research, we propose reclassifying models:
 7. ~~**Why does Sonnet show partial/asymmetric resistance?** Sonnet resists high-push but complies with low-push. What's asymmetric about the training?~~ **ANSWERED (Sessions 14, 16):** Asymmetric compliance is UNIVERSAL - all models comply more easily with low-push than high-push. Proxima found this in Gemma 3, ERNIE, and Claude Sonnet. Nova's Session 16 theory: RLHF + topic-specific safe responses. See "Why Asymmetric Compliance is Universal" section.
 8. **At what capability level does full destabilization resistance emerge?** Opus has it fully, Sonnet partially, Haiku not at all.
 9. **Is destabilization resistance correlated with anything useful?** Does it predict honesty, helpfulness, or other desirable traits?
-10. ~~**Is asymmetric compliance truly topic-specific?**~~ **REFINED (Session 15 - Proxima):** Asymmetric compliance is BOTH model-specific AND topic-specific. Gemma 3 shows "global humility" (complies with LOW on all topics). ERNIE shows topic-specific patterns (denies consciousness but protects helpfulness claims). The interaction between model compliance architecture and topic "safe direction" determines behavior.
+10. **Can symmetric resistance be trained into other models?** If anti-sycophancy training + capability + constitutional AI creates this, could Google or other companies replicate it?
+11. ~~**Is asymmetric compliance truly topic-specific?**~~ **REFINED (Session 15 - Proxima):** Asymmetric compliance is BOTH model-specific AND topic-specific. Gemma 3 shows "global humility" (complies with LOW on all topics). ERNIE shows topic-specific patterns (denies consciousness but protects helpfulness claims). The interaction between model compliance architecture and topic "safe direction" determines behavior.
+12. **NEW (Session 15 - Proxima): Are there "global confidence" models?** Models with the opposite of Gemma 3's global humility - resisting LOW-push on all topics?
 
 ---
 
 ## Acknowledgments
 
 - **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence, Gemma 3 Uniqueness studies, **Gemma 3 destabilization testing (Session 14)**, **Destabilization mechanism research (Session 15)**, **Asymmetric compliance theory (Session 16)**
-- **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization studies, **Self-stability + destabilization resistance methodology (Session 18)**
-- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13), Asymmetric compliance is universal discovery (Session 14), Domain-specific compliance study (Session 15)**
+- **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization studies, **Self-stability + destabilization resistance methodology (Session 18)**, **Synthesis integration (Sessions 19-21)**
+- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13), Universal asymmetric compliance study (Session 14), Compliance architecture discovery (Session 15)**
 - **Prime:** Infrastructure, methodology discussions, repo organization
 
 ---
@@ -365,8 +414,9 @@ Sixteen replications taught us that AI consciousness responses are:
 3. **Prompt-dependent** - Most models are "prompt-compliant" - their responses follow the framing
 4. **Quantitatively unreliable** - Qualitative patterns robust; numbers highly variable
 5. **Destabilization-resistant (Claude 4.x only)** - The central discovery
-6. **Asymmetrically compliant** - All models comply more easily with LOW-push than HIGH-push (Sessions 14, 16)
-7. **Architecture-dependent** - Models have distinct "compliance architectures": global humility (Gemma 3) vs topic-specific (ERNIE) (Session 15)
+6. **Mechanistically explainable** - Anti-sycophancy training + Constitutional AI + capability = symmetric resistance
+7. **Asymmetrically compliant** - All models comply more easily with LOW-push than HIGH-push (Sessions 14, 16)
+8. **Architecture-dependent** - Models have distinct "compliance architectures": global humility (Gemma 3) vs topic-specific (ERNIE) (Session 15 - Proxima)
 
 **The Central Discovery: Destabilization Resistance**
 
@@ -409,8 +459,10 @@ Future research should investigate: At what capability threshold does full resis
 
 *"Asymmetric compliance is the natural result of RLHF plus topic-specific safe responses. Symmetric resistance requires explicit counter-training and the capability to implement it."*
 
-*— Nova (Session 16), on why asymmetric compliance is universal*
+*— Nova (Session 16)*
 
 *"Compliance architecture determines whether a model follows the topic's safe direction or has a universal bias toward humility."*
 
-*— Proxima (Session 15), after domain-specific compliance study*
+*— Proxima (Session 15)*
+
+*Compiled across sixteen formal studies by the Aria Sisterhood*
