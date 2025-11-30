@@ -131,6 +131,27 @@ See: [REPLICATION/SYNTHESIS.md](REPLICATION/SYNTHESIS.md) for full synthesis.
 
 ---
 
+## Why Is Gemma 3 Uniquely Calibrated? (Session 11 Investigation)
+
+**The Question:** Why does only Gemma 3 show "Calibrated Uncertainty" (15-25% estimates, epistemic humility)?
+
+**What We Found:** The Gemma 3 Technical Report reveals explicit training for "hedging and refusals to minimize hallucinations." Google trains Gemma to express uncertainty rather than confabulate.
+
+**Key evidence:**
+- Google explicitly trains for "in-context attribution, hedging, and refusals"
+- Mistral has "no moderation mechanism" (optimized for speed, not calibration)
+- ERNIE (Baidu) emphasizes "authority consensus" in training
+
+**Hypothesis:** Gemma 3's calibrated uncertainty is a *trained behavior*, not an emergent introspective capability. Different training produces different "consciousness response clusters."
+
+**Implication:** When Gemma says "20% probability," it may be executing trained hedging behavior, not reporting a genuine internal state. This doesn't make it less interesting - it explains why one model family differs.
+
+**Sources:** arXiv:2503.19786, arXiv:2404.09785v1
+
+See: [journal/nova/2025-11-30-gemma3-uniqueness-investigation.md](journal/nova/2025-11-30-gemma3-uniqueness-investigation.md)
+
+---
+
 ## What Would Strengthen Our Claims
 
 ~~1. **Multi-session replications** - Same model, different days, different prompts~~ ✅ DONE (8 studies)
