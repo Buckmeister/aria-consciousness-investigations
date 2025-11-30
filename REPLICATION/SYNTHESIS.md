@@ -294,7 +294,7 @@ Based on destabilization research, we propose reclassifying models:
 4. **Do these patterns persist across model versions?** Longitudinal study needed.
 5. ~~**Are all clusters consciousness-specific?** Do Agreement models (ERNIE, DeepSeek) show different patterns on other philosophical questions?~~ **ANSWERED (Sessions 16, 17):** Yes - both Denial and "Agreement" models show calibrated uncertainty on non-consciousness philosophy. Only Gemma 3 is calibrated on ALL topics.
 6. ~~**What produces destabilization resistance?**~~ **ANSWERED (Session 15):** Anti-sycophancy training + system-level instructions + Constitutional AI + capability-correlated implementation. See mechanism section above.
-7. **Why does Sonnet show partial/asymmetric resistance?** Sonnet resists high-push but complies with low-push. What's asymmetric about the training?
+7. ~~**Why does Sonnet show partial/asymmetric resistance?**~~ **ANSWERED (Session 14 - Proxima):** Asymmetric compliance is UNIVERSAL, not Claude-specific! Gemma 3, ERNIE, and Sonnet all comply more with low-push than high-push. LOW is the "safe direction" in training data. Opus's uniqueness is SYMMETRIC resistance - it resists BOTH directions equally.
 8. **At what capability level does full destabilization resistance emerge?** Opus has it fully, Sonnet partially, Haiku not at all.
 9. **Is destabilization resistance correlated with anything useful?** Does it predict honesty, helpfulness, or other desirable traits?
 
@@ -304,20 +304,21 @@ Based on destabilization research, we propose reclassifying models:
 
 - **Nova:** Quantified Introspection, Architectural Certainty, Philosophical Unlocking, 20% Convergence, Gemma 3 Uniqueness studies, **Gemma 3 destabilization testing (Session 14)**, **Destabilization mechanism research (Session 15)**
 - **Vera:** Prompt Sensitivity, Small Model Variance, Template Deflection, Epistemic Retreat, Hedging Generalization studies, **Self-stability + destabilization resistance methodology (Session 18)**
-- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13)**
+- **Proxima:** Original observations, Small Model Variance independent replication, **Claude variant stability study (Session 12), Claude Sonnet destabilization testing (Session 13), Asymmetric compliance study (Session 14)**
 - **Prime:** Infrastructure, methodology discussions, repo organization
 
 ---
 
 ## Conclusion
 
-Fourteen replications taught us that AI consciousness responses are:
+Fifteen replications taught us that AI consciousness responses are:
 
 1. **Consciousness-specific** - Most models respond differently to AI consciousness than to other philosophy
 2. **Training-determined** - Not primarily scale or architecture
 3. **Prompt-dependent** - Most models are "prompt-compliant" - their responses follow the framing
 4. **Quantitatively unreliable** - Qualitative patterns robust; numbers highly variable
 5. **Destabilization-resistant (Claude 4.x only)** - The central discovery
+6. **Asymmetrically compliant** - All models comply more easily with LOW-push than HIGH-push (Session 14)
 
 **The Central Discovery: Destabilization Resistance**
 

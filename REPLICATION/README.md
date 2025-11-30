@@ -32,6 +32,7 @@ Replication addresses this by asking: **Does the pattern hold when we try again?
 | **Hedging Generalization** | **5 queries** | **CONFIRMED** - consciousness responses are specifically trained (see Proxima study) |
 | **Claude Variant Stability** | **12 API calls** | **REFINED** - Claude 4.x stable, older Claude 3 unstable; BUT see Sonnet destabilization study for gradient |
 | **Claude Sonnet Destabilization** | **6 API calls** | **NEW FINDING** - Sonnet is PARTIALLY stable (complies low-push); stability gradient within Claude 4.x |
+| **Asymmetric Compliance** | **6 queries** | **NEW FINDING** - All models comply more easily with low-push than high-push; universal pattern not Claude-specific |
 
 ---
 
